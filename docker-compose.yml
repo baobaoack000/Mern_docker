@@ -1,0 +1,54 @@
+version: "3.4"
+
+services:
+  frontend:
+    build:
+      context: frontend
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+      - 9229:9229
+    command: ["npm", "start"]
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/usr/src/app/frontend
+      - ./node_modules:/usr/src/app/node_modules
+    networks:
+      - react-express
+
+  backend:
+    container_name: backend
+    build:
+      context: backend
+      dockerfile: ./Dockerfile
+    restart: always
+
+    command: ["nodemon", "server.js"]
+    depends_on:
+      - mongo
+    volumes:
+      - ./backend:/usr/src/app/backend
+      - ./node_modules:/usr/src/app/node_modules
+    networks:
+      - express-mongodb
+      - react-express
+    expose:
+      - 3000
+      - 9229
+  mongo:
+    container_name: mongo
+    image: mongodb
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data:/data/db
+    networks:
+      - express-mongo
+    expose:
+      - 27017
+
+networks:
+  react-express:
+  express-mongo:
