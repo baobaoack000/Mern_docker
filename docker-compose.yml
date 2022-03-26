@@ -1,5 +1,4 @@
 version: "3.4"
-
 services:
   frontend:
     build:
@@ -17,7 +16,6 @@ services:
       - ./node_modules:/usr/src/app/node_modules
     networks:
       - react-express
-
   backend:
     container_name: backend
     build:
@@ -32,18 +30,19 @@ services:
       - ./backend:/usr/src/app/backend
       - ./node_modules:/usr/src/app/node_modules
     networks:
-      - express-mongodb
+      - express-mongo
       - react-express
     expose:
       - 3000
       - 9229
   mongo:
     container_name: mongo
-    image: mongodb
+    restart: always
+    image: mongo:5.0
     ports:
       - 27017:27017
     volumes:
-      - ./data:/data/db
+      - "/backend/db:/data/db"
     networks:
       - express-mongo
     expose:
