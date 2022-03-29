@@ -45,12 +45,12 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
-      - ./backend/db:/data/db
+      - ./backend/db:/data/db/admin
+      - ./backend/db:/data/db/mongodbVSCodePlaygroundDB
     networks:
       - express-mongo
     expose:
       - 27017
-
 networks:
   react-express:
   express-mongo:
