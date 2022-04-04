@@ -1,13 +1,14 @@
-FROM :node:17
+# default ver 17
+FROM node:lts-buster-slim 
 
 #APP location
 WORKDIR /usr/src/app
-COPY package.json ./usr/src/app/package.json
-COPY package-lock.json ./usr/src/app/package-lock.json
+COPY package.json /usr/src/app/package.json
+COPY package-lock.json /usr/src/app/package-lock.json
 RUN npm ci 
 
 COPY . /usr/src/app
 
 EXPOSE 3000
 
-CMD ["npm","start"]
+CMD [ "npm","start" ]

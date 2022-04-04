@@ -12,10 +12,11 @@ services:
     depends_on:
       - backend
     volumes:
-      - ./frontend:/usr/src/app/frontend
+      - ./frontend:/usr/src/app
       - ./node_modules:/usr/src/app/node_modules
     networks:
       - react-express
+      - hadolint
   backend:
     container_name: backend
     build:
@@ -27,11 +28,12 @@ services:
     depends_on:
       - mongo
     volumes:
-      - ./backend:/usr/src/app/backend
+      - ./backend:/usr/src/app
       - ./node_modules:/usr/src/app/node_modules
     networks:
       - express-mongo
       - react-express
+      - hadolint
     expose:
       - 3000
       - 9229
@@ -45,12 +47,24 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
-      - ./backend/db:/data/db/admin
-      - ./backend/db:/data/db/mongodbVSCodePlaygroundDB
+      - ./backend/db:/data/db
     networks:
       - express-mongo
     expose:
       - 27017
+
+  hadolint:
+    image: hadolint/hadolint:v1.17.5
+    command: ["hadolint", "--ignore=W191"]
+    volumes:
+      - ./backend:/usr/src/app/backend
+      - ./frontend:/usr/src/app/frontend
+    networks:
+      - hadolint
+    expose:
+      - 9000
+
 networks:
   react-express:
   express-mongo:
+  hadolint:
