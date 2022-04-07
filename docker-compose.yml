@@ -20,23 +20,20 @@ services:
   backend:
     container_name: backend
     build:
-      context: backend
-      dockerfile: ./Dockerfile
+      context: ./backend
+      dockerfile: Dockerfile
     restart: always
-
-    command: ["nodemon", "server.js"]
     depends_on:
       - mongo
     volumes:
       - ./backend:/usr/src/app
-      - ./node_modules:/usr/src/app/node_modules
+      - /usr/src/app/node_modules
     networks:
       - express-mongo
       - react-express
       - hadolint
     expose:
       - 3000
-      - 9229
   mongo:
     container_name: mongo
     restart: always
