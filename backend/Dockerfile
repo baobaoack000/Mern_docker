@@ -1,11 +1,13 @@
 # default ver 17
 FROM node:lts-buster-slim 
 
+#install dependencies
+RUN npm install -g nodemon
 #APP location
 WORKDIR /usr/src/app
 COPY package.json /usr/src/app/package.json
-COPY package-lock.json /usr/src/app/package-lock.json
-RUN npm ci 
+COPY package-lock.json /usr/src/app/package-lock.json 
+RUN npm ci
 
 COPY . /usr/src/app
 
