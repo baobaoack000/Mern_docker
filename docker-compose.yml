@@ -1,6 +1,7 @@
 version: "3.4"
 services:
   frontend:
+    container_name: frontend
     build:
       context: frontend
       dockerfile: ./Dockerfile
@@ -27,6 +28,7 @@ services:
       - 3000:3000
     depends_on:
       - mongo
+      - hadolint
     volumes:
       - ./backend:/usr/src/app
       - /usr/src/app/node_modules
@@ -53,11 +55,18 @@ services:
       - 27017
 
   hadolint:
+    container_name: hadolint
     image: hadolint/hadolint:v1.17.5
-    command: ["hadolint", "--ignore=W191"]
+    command:
+      [
+        "hadolint",
+        "--config",
+        "./backend/hadolint.yaml",
+        "<",
+        "./backend/Dockerfile",
+      ]
     volumes:
-      - ./backend:/usr/src/app/backend
-      - ./frontend:/usr/src/app/frontend
+      - ./:/usr/src/app/
     networks:
       - hadolint
     expose:
