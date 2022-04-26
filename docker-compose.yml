@@ -57,12 +57,12 @@ services:
   hadolint:
     container_name: hadolint
     image: hadolint/hadolint:v1.17.5
+    working_dir: /usr/src/app/
     command:
       [
         "hadolint",
         "--config",
         "./backend/hadolint.yaml",
-        "<",
         "./backend/Dockerfile",
       ]
     volumes:
