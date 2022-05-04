@@ -8,13 +8,11 @@ services:
     restart: always
     ports:
       - 3000:3000
-      - 9229:9229
-    command: ["npm", "start"]
+    stdin_open: true
     depends_on:
       - backend
     volumes:
       - ./frontend:/usr/src/app
-      - ./node_modules:/usr/src/app/node_modules
     networks:
       - react-express
       - hadolint
@@ -24,8 +22,6 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     restart: always
-    ports:
-      - 3000:3000
     depends_on:
       - mongo
       - hadolint
