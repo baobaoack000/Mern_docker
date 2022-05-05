@@ -1,5 +1,6 @@
 /*eslint no-undef: "error"*/
 /*eslint-env node*/
+// prettier-ignore
 module.exports = {
     "env": {
         "browser": true,
@@ -19,6 +20,7 @@ module.exports = {
     "plugins": [
         "react"
     ],
+    "ignorePatterns": ["Hello.js"],
     "rules": {
         "react/react-in-jsx-scope": "off"
     }
