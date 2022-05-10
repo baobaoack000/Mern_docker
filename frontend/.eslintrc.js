@@ -1,6 +1,3 @@
-/*eslint no-undef: "error"*/
-/*eslint-env node*/
-// prettier-ignore
 module.exports = {
     "env": {
         "browser": true,
@@ -8,11 +5,13 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "auto"
     ],
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
+            "jsx": true,
+            "js" : true
         },
         "ecmaVersion": "latest",
         "sourceType": "module"
@@ -20,8 +19,6 @@ module.exports = {
     "plugins": [
         "react"
     ],
-    "ignorePatterns": ["Hello.js"],
     "rules": {
-        "react/react-in-jsx-scope": "off"
     }
 }
