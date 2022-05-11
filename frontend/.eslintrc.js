@@ -6,12 +6,11 @@ module.exports = {
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "auto"
+        "standard"
     ],
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true,
-            "js" : true
+            "jsx": true
         },
         "ecmaVersion": "latest",
         "sourceType": "module"
@@ -20,5 +19,10 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "react/jsx-uses-react": "off",
+        "react/jsx-uses-vars": "off",
+        "react/react-in-jsx-scope": "off",
+        "semi": "off",
+        "no-unused-vars": "off"
     }
 }
