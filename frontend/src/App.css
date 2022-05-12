@@ -1,10 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .App {
+  margin :auto;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 2.5em;
   text-align: center;
 }
+
+
 
 .App-logo {
   height: 40vmin;
