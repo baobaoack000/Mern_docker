@@ -1,30 +1,30 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import table  from "./feature/api-table/Api.js";
 
 function App() {
-  const { coffee, setCoffee } = useState([]);
+
+  const [coffee, setCoffee] = useState([]);
+  
   useEffect(() => {
-    axios
-      .get("https://random-data-api.com/api/coffee/random_coffee")
-      .then((res) => {
-        const data = res.data;
-        setCoffee(data);
-      });
-  }, []);
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "https://random-data-api.com/api/coffee/random_coffee"
+        );
+        setCoffee(response.data);
+      }
+      catch (error) {
+        console.log(error);
+      }
+    }
+    fetchData();
+  }, [])
+
+ 
 
   //trial test data *Moving to Jest*
-  const datas = [
-    {
-      id: 4471,
-      uid: "a3598788-07e5-4b54-8931-314008c23012",
-      blend_name: "American Coffee",
-      origin: "Kayanza, Burundi",
-      variety: "Kona",
-      notes: "tart, slick, bergamot, orange creamsicle, jasmine",
-      intensifier: "delicate",
-    },
-  ];
 
 
   return (
@@ -51,20 +51,7 @@ function App() {
               </thead>
               {/* api database */}
               <tbody className="text-white">
-                {datas.map((item, i) => {
-                  <tr key={i}>
-                    <td>{item.id}</td>
-                    <td>{item.uid}</td>
-                    <td>{item.blend_name}</td>
-                  </tr>;
-
-                  // <tr key={i}>
-                  //   <td className="border px-8 py-4">{item.id}</td>
-                  //   <td className="border px-8 py-4">Malcolm Lockyer</td>
-                  //   <td className="border px-8 py-4">1961</td>
-                  // </tr>
-                }
-                )};
+                {table}
               </tbody>
             </table>
           </div>
