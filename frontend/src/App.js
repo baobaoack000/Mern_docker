@@ -1,42 +1,32 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import table from "./feature/api-table/Api.js";
+
 
 function App() {
-  const [coffee, setCoffee] = useState([
-    {
-      id: 7577,
-      uid: "0f1db700-efbc-4939-a8f3-1bb2c04dbc36",
-      blend_name: "Good-morning Extract",
-      origin: "El Balsamo-Quetzaltepec, El Salvador",
-      variety: "Dega",
-      notes: "vibrant, chewy, marzipan, hops, green grape",
-      intensifier: "dirty",
-    }
-  ]);
+
+  const [coffee, setCoffee] = useState([]);
   const [error, setError] = useState("");
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(false);  
 
   useEffect(() => {
-  async function getRandomUser() {
-    try {
-      const data = await axios.get(
-        "https://random-data-api.com/api/coffee/random_coffee"
-      );
-      return data;
-        // setCoffee(data)
-    } catch (err) {
-      setError(err)
-    } finally{ 
-      setLoaded(true)
-    }
+    async function getRandomUser() {
+      try {
+        const database = await axios.get("https://fakestoreapi.com/products");
+        const data = database.data;
+        setCoffee(data);
+      } catch (err) {
+        setError(err);
+      } finally {
+        setLoaded(true);
+      }
     }
     getRandomUser();
   }, []);
 
   //trial test data *Moving to Jest*
 
+  
   return (
     <div className="App">
       <div className="border-4 border-x-indigo-500 ">
@@ -61,25 +51,29 @@ function App() {
               </thead>
               {/* api database */}
               <tbody className="text-white">
-                {coffee.map((item, i) => {
-                  if (loaded) {
-                    return error ? (
-                      <span>Error: {error}</span>
-                    ) : (
-                      <tr key={i}>
-                        <td className="border px-8 py-4">{item.id}</td>
-                        <td className="border px-8 py-4">{item.intensifier}</td>
-                        <td className="border px-8 py-4">{item.blend_name}</td>
-                      </tr>
-                    );
-                  }
-                  return (
-                    <tr key={i}>
-                      <td className="border px-8 py-4">Loading...</td>
-                    </tr>
-                  );
-                })}
-                {}
+                {!loaded
+                  ? coffee.map(() => {
+                      return (
+                        <tr key={1}>
+                          <td className="border px-8 py-4">Loading...</td>
+                          <td className="border px-8 py-4">Loading...</td>
+                          <td className="border px-8 py-4">Loading...</td>
+                        </tr>
+                      );
+                    })
+                  : coffee.map(({ id, title, price },i) => {
+                      if (loaded) {
+                        return error ? (
+                          <span>Error: {error}</span>
+                        ) : (
+                          <tr key={i}>
+                            <td className="border px-8 py-4">{id}</td>
+                            <td className="border px-8 py-4">{title}</td>
+                            <td className="border px-8 py-4">{price}</td>
+                          </tr>
+                        );
+                      }
+                    })}
               </tbody>
             </table>
           </div>
