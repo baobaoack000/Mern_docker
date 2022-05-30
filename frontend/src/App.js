@@ -5,7 +5,7 @@ import axios from "axios";
 
 function App() {
 
-  const [coffee, setCoffee] = useState([]);
+  const [item, setItem] = useState([]);
   const [error, setError] = useState("");
   const [loaded, setLoaded] = useState(false);  
 
@@ -14,7 +14,7 @@ function App() {
       try {
         const database = await axios.get("https://fakestoreapi.com/products");
         const data = database.data;
-        setCoffee(data);
+        setItem(data);
       } catch (err) {
         setError(err);
       } finally {
@@ -52,7 +52,7 @@ function App() {
               {/* api database */}
               <tbody className="text-white">
                 {!loaded
-                  ? coffee.map(() => {
+                  ? item.map(() => {
                       return (
                         <tr key={1}>
                           <td className="border px-8 py-4">Loading...</td>
@@ -61,7 +61,7 @@ function App() {
                         </tr>
                       );
                     })
-                  : coffee.map(({ id, title, price },i) => {
+                  : item.map(({ id, title, price },i) => {
                       if (loaded) {
                         return error ? (
                           <span>Error: {error}</span>
