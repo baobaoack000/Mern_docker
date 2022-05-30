@@ -35,7 +35,7 @@ services:
     expose:
       - 3000
   mongo:
-    container_name: mongo
+    container_name: mongodb
     restart: always
     image: mongo:5.0
     ports:
@@ -46,7 +46,9 @@ services:
     volumes:
       - ./backend/db:/data/db
     networks:
-      - express-mongo
+      express-mongo:
+        ipv4_address: 172.16.0.1
+    command: mongod --bind_ip 127.0.0.1,172.16.0.1
     expose:
       - 27017
 
@@ -71,4 +73,9 @@ services:
 networks:
   react-express:
   express-mongo:
+    ipam:
+      driver: default
+      config:
+       - subnet: 172.16.0.0/24
+         gateway: 172.16.0.254
   hadolint:

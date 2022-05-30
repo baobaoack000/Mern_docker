@@ -4,7 +4,7 @@ exports.connect = (app) => {
   const connectWithretry = () => {
     console.log("Try to connect to mongoDB");
     mongoose
-      .connect("mongodb://localhost:27017/test", {
+      .connect("mongodb://127.0.0.1:27017/test", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true,
