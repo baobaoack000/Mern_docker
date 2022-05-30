@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const app = require("../server");
 
 const Account = mongoose.model("Accounts", {
   name: {

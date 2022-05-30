@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "format": " prettier --write **/*.js",
-    "lint": "prettier --check **/*.js"
+    "lint": "prettier --check **/*.js",
+    "test": "mocha"
   },
   "dependencies": {
     "@sentry/node": "^6.19.6",
@@ -17,6 +18,8 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
     "nodemon": "^2.0.15",
     "prettier": "^2.6.1"
   }
