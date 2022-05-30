@@ -44,9 +44,9 @@ function App() {
             <table className="table-auto border-separate rounded bg-slate-500 bg-auto box-border h-200 w-110">
               <thead className="bg-white">
                 <tr>
-                  <th>Song</th>
-                  <th>Artist</th>
-                  <th>Year</th>
+                  <th>No.</th>
+                  <th>Items</th>
+                  <th>Price</th>
                 </tr>
               </thead>
               {/* api database */}
