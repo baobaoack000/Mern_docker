@@ -1,0 +1,590 @@
+Load environment configuration
+mkdir: created directory '/appsmith-stacks/git-storage'
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/appsmith/backend/server.jar!/BOOT-INF/lib/logback-classic-1.2.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/appsmith/backend/server.jar!/BOOT-INF/lib/slf4j-log4j12-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+ - Starting ServerApplication vv1.7.0 using Java 11.0.15 on b3f38aa3bf20 with PID 182 (/opt/appsmith/backend/server.jar started by root in /opt/appsmith/backend)
+ - Running with Spring Boot v2.5.9, Spring v5.3.15
+ - No active profile set, falling back to default profiles: default
+ - Multiple Spring Data modules found, entering strict repository configuration mode!
+ - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+ - Finished Spring Data repository scanning in 461 ms. Found 53 Reactive MongoDB repository interfaces.
+ - Multiple Spring Data modules found, entering strict repository configuration mode!
+ - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.GitDeployKeysRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.LayoutRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.NotificationRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.OrganizationRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.UsagePulseRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.DatasourceRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.UserDataRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PageRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.CommentRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.CollectionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ConfigRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PermissionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.UserRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.GroupRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ProviderRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ApplicationRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.LayoutRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.AssetRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ActionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PasswordResetTokenRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PluginRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.NewPageRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.NewActionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ThemeRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ActionCollectionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ApiTemplateRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.CommentThreadRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.InviteUserRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ApiTemplateRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.GroupRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.InviteUserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.CollectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PluginRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.CommentThreadRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.UserDataRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ConfigRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.DatasourceRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PasswordResetTokenRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ActionCollectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.OrganizationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.AssetRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ThemeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.UsagePulseRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.NewActionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.CommentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.NotificationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ApplicationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PageRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PermissionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ActionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.NewPageRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ProviderRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Finished Spring Data repository scanning in 219 ms. Found 0 Redis repository interfaces.
+ - Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:508)
+	at com.mongodb.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:476)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:27017
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+ - Enabled plugins: []
+ - Disabled plugins: []
+ - PF4J version 3.5.0 in 'deployment' mode
+ - Plugin 'rapidapi-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'saas-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'postgres-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'snowflake-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'elasticsearch-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'mssql-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'redshift-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'google-sheets-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'mongo-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'js-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'smtp-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'amazons3-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'mysql-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'dynamo-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'arangodb-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'restapi-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'redis-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'firestore-plugin@1.0-SNAPSHOT' resolved
+ - Start plugin 'rapidapi-plugin@1.0-SNAPSHOT'
+ - Start plugin 'saas-plugin@1.0-SNAPSHOT'
+ - Start plugin 'postgres-plugin@1.0-SNAPSHOT'
+ - Start plugin 'snowflake-plugin@1.0-SNAPSHOT'
+ - Start plugin 'elasticsearch-plugin@1.0-SNAPSHOT'
+ - Start plugin 'mssql-plugin@1.0-SNAPSHOT'
+ - Start plugin 'redshift-plugin@1.0-SNAPSHOT'
+ - Start plugin 'google-sheets-plugin@1.0-SNAPSHOT'
+ - Start plugin 'mongo-plugin@1.0-SNAPSHOT'
+ - Start plugin 'js-plugin@1.0-SNAPSHOT'
+ - Start plugin 'smtp-plugin@1.0-SNAPSHOT'
+ - Start plugin 'amazons3-plugin@1.0-SNAPSHOT'
+ - Start plugin 'mysql-plugin@1.0-SNAPSHOT'
+ - Start plugin 'dynamo-plugin@1.0-SNAPSHOT'
+ - Start plugin 'arangodb-plugin@1.0-SNAPSHOT'
+ - Start plugin 'restapi-plugin@1.0-SNAPSHOT'
+ - Start plugin 'redis-plugin@1.0-SNAPSHOT'
+ - Start plugin 'firestore-plugin@1.0-SNAPSHOT'
+ - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - Opened connection [connectionId{localValue:3, serverValue:7}] to localhost:27017
+ - Opened connection [connectionId{localValue:4, serverValue:8}] to localhost:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=54846500, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6295dd6010172828b52d9e4f, counter=6}, lastWriteDate=Tue May 31 09:18:33 UTC 2022, lastUpdateTimeNanos=5806764562100}
+ - Exposing 1 endpoint(s) beneath base path '/actuator'
+ - Netty started on port 8080
+ - Started ServerApplication in 15.075 seconds (JVM running for 15.718)
+ - Reflections took 76 ms to scan 1 urls, producing 2 keys and 6 values 
+ - Opened connection [connectionId{localValue:5, serverValue:9}] to localhost:27017
+ - Mongock trying to acquire the lock
+ - Mongock acquired the lock until: Tue May 31 09:21:40 UTC 2022
+ - Mongock starting the data migration sequence id[2022-05-31T09:18:40.847417-984]...
+ - method[initialPlugins] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="initial-plugins", "author"="", "class"="DatabaseChangelog", "method"="initialPlugins"}
+ - method[removeOrgNameIndex] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="remove-org-name-index", "author"="", "class"="DatabaseChangelog", "method"="removeOrgNameIndex"}
+ - method[addOrgSlugs] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate, com.sun.proxy.$Proxy230]
+ - APPLIED - ChangeEntry{, "id"="add-org-slugs", "author"="", "class"="DatabaseChangelog", "method"="addOrgSlugs"}
+ - method[addInitialIndexes] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="initial-indexes", "author"="", "class"="DatabaseChangelog", "method"="addInitialIndexes"}
+ - method[addApplicationDeletedAtFieldAndIndex] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="application-deleted-at", "author"="", "class"="DatabaseChangelog", "method"="addApplicationDeletedAtFieldAndIndex"}
+ - method[hideRapidApiPluginFromCreateDatasource] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="hide-rapidapi-plugin", "author"="", "class"="DatabaseChangelog", "method"="hideRapidApiPluginFromCreateDatasource"}
+ - method[addDatasourceDeletedAtFieldAndIndex] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="datasource-deleted-at", "author"="", "class"="DatabaseChangelog", "method"="addDatasourceDeletedAtFieldAndIndex"}
+ - method[addPageDeletedAtFieldAndIndex] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="page-deleted-at", "author"="", "class"="DatabaseChangelog", "method"="addPageDeletedAtFieldAndIndex"}
+ - method[setFriendlyPluginNames] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="friendly-plugin-names", "author"="", "class"="DatabaseChangelog", "method"="setFriendlyPluginNames"}
+ - method[addDeleteDatasourcePermToExistingGroups] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-delete-datasource-perm-existing-groups", "author"="", "class"="DatabaseChangelog", "method"="addDeleteDatasourcePermToExistingGroups"}
+ - method[installDefaultPluginsToAllOrganizations] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="install-default-plugins-to-all-organizations", "author"="", "class"="DatabaseChangelog", "method"="installDefaultPluginsToAllOrganizations"}
+ - method[ensureDatasourceCreatedAndUpdatedAt] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="ensure-datasource-created-and-updated-at-fields", "author"="", "class"="DatabaseChangelog", "method"="ensureDatasourceCreatedAndUpdatedAt"}
+ - method[addIndexForSequenceName] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-index-for-sequence-name", "author"="", "class"="DatabaseChangelog", "method"="addIndexForSequenceName"}
+ - method[setInitialSequenceForDatasource] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="set-initial-sequence-for-datasource", "author"="", "class"="DatabaseChangelog", "method"="setInitialSequenceForDatasource"}
+ - method[setPluginImageAndDocsLink] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="set-plugin-image-and-docs-link", "author"="", "class"="DatabaseChangelog", "method"="setPluginImageAndDocsLink"}
+ - method[fixDoubleEscapes] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="fix-double-escapes", "author"="", "class"="DatabaseChangelog", "method"="fixDoubleEscapes"}
+ - method[encryptPassword] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate, com.sun.proxy.$Proxy231]
+ - APPLIED - ChangeEntry{, "id"="encrypt-password", "author"="", "class"="DatabaseChangelog", "method"="encryptPassword"}
+ - method[mysqlPlugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="install-mysql-plugins", "author"="", "class"="DatabaseChangelog", "method"="mysqlPlugin"}
+ - method[updateDatabaseDocumentationLinks] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-database-documentation-links", "author"="", "class"="DatabaseChangelog", "method"="updateDatabaseDocumentationLinks"}
+ - method[giveExecutePermissionToReadActionUsers] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="execute-action-for-read-action", "author"="", "class"="DatabaseChangelog", "method"="giveExecutePermissionToReadActionUsers"}
+ - method[giveInvitePermissionToOrganizationsAndPublicPermissionsToApplications] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="invite-and-public-permissions", "author"="", "class"="DatabaseChangelog", "method"="giveInvitePermissionToOrganizationsAndPublicPermissionsToApplications"}
+ - method[examplesOrganization] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate, com.sun.proxy.$Proxy231]
+ - Opened connection [connectionId{localValue:6, serverValue:18}] to localhost:27017
+ - Opened connection [connectionId{localValue:7, serverValue:19}] to localhost:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17173000, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6295dd6010172828b52d9e4f, counter=6}, lastWriteDate=Tue May 31 09:18:42 UTC 2022, lastUpdateTimeNanos=5810510499200}
+ - APPLIED - ChangeEntry{, "id"="examples-organization", "author"="", "class"="DatabaseChangelog", "method"="examplesOrganization"}
+ - method[setExampleAppsInConfig] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="set-example-apps-in-config", "author"="", "class"="DatabaseChangelog", "method"="setExampleAppsInConfig"}
+ - method[updateErroneousActionIdsInPage] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-erroneous-action-ids", "author"="", "class"="DatabaseChangelog", "method"="updateErroneousActionIdsInPage"}
+ - method[generateUniqueIdForInstance] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="generate-unique-id-for-instance", "author"="", "class"="DatabaseChangelog", "method"="generateUniqueIdForInstance"}
+ - method[fixTokenExpiration] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="fix-password-reset-token-expiration", "author"="", "class"="DatabaseChangelog", "method"="fixTokenExpiration"}
+ - method[addElasticSearchPlugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-elastic-search-plugin", "author"="", "class"="DatabaseChangelog", "method"="addElasticSearchPlugin"}
+ - method[addDynamoPlugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-dynamo-plugin", "author"="", "class"="DatabaseChangelog", "method"="addDynamoPlugin"}
+ - method[usePngLogos] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="use-png-logos", "author"="", "class"="DatabaseChangelog", "method"="usePngLogos"}
+ - method[addRedisPlugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-redis-plugin", "author"="", "class"="DatabaseChangelog", "method"="addRedisPlugin"}
+ - method[addMsSqlPlugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-msSql-plugin", "author"="", "class"="DatabaseChangelog", "method"="addMsSqlPlugin"}
+ - method[addNewPageIndexAfterDroppingNewPage] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="createNewPageIndexAfterDroppingNewPage", "author"="", "class"="DatabaseChangelog", "method"="addNewPageIndexAfterDroppingNewPage"}
+ - method[addNewActionIndexAfterDroppingNewAction] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="createNewActionIndexAfterDroppingNewAction", "author"="", "class"="DatabaseChangelog", "method"="addNewActionIndexAfterDroppingNewAction"}
+ - method[migratePage] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="migrate-page-and-actions", "author"="", "class"="DatabaseChangelog", "method"="migratePage"}
+ - method[addNewPageAndNewActionNewIndexes] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="new-page-new-action-add-indexes", "author"="", "class"="DatabaseChangelog", "method"="addNewPageAndNewActionNewIndexes"}
+ - method[addNewActionIndexForPageId] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="new-action-add-index-pageId", "author"="", "class"="DatabaseChangelog", "method"="addNewActionIndexForPageId"}
+ - method[updateActionIndexToSingleMultipleIndices] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-action-index-to-single-multiple-indices", "author"="", "class"="DatabaseChangelog", "method"="updateActionIndexToSingleMultipleIndices"}
+ - method[addFirestorePlugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-firestore-plugin", "author"="", "class"="DatabaseChangelog", "method"="addFirestorePlugin"}
+ - method[ensureAppIconsAndColors] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="ensure-app-icons-and-colors", "author"="", "class"="DatabaseChangelog", "method"="ensureAppIconsAndColors"}
+ - method[updateAuthenticationTypes] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-authentication-type", "author"="", "class"="DatabaseChangelog", "method"="updateAuthenticationTypes"}
+ - method[addIsSendSessionEnabledPropertyInDatasources] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-isSendSessionEnabled-key-for-datasources", "author"="", "class"="DatabaseChangelog", "method"="addIsSendSessionEnabledPropertyInDatasources"}
+ - method[addRedshiftPlugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-redshift-plugin", "author"="", "class"="DatabaseChangelog", "method"="addRedshiftPlugin"}
+ - method[clearUserDataCollection] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="clear-userdata-collection", "author"="", "class"="DatabaseChangelog", "method"="clearUserDataCollection"}
+ - method[updateDatabaseDocumentationLinks_v1_2_1] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-database-documentation-links-v1-2-1", "author"="", "class"="DatabaseChangelog", "method"="updateDatabaseDocumentationLinks_v1_2_1"}
+ - method[addAmazonS3Plugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-amazons3-plugin", "author"="", "class"="DatabaseChangelog", "method"="addAmazonS3Plugin"}
+ - method[addAppViewerInvitePolicy] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-app-viewer-invite-policy", "author"="", "class"="DatabaseChangelog", "method"="addAppViewerInvitePolicy"}
+ - method[updatePluginDatasourceFormComponents] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-plugin-datasource-form-components", "author"="", "class"="DatabaseChangelog", "method"="updatePluginDatasourceFormComponents"}
+ - method[updateEncodeParamsToggle] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-database-encode-params-toggle", "author"="", "class"="DatabaseChangelog", "method"="updateEncodeParamsToggle"}
+ - method[updatePostgresActionsSetPreparedStatementConfiguration] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-postgres-plugin-preparedStatement-config", "author"="", "class"="DatabaseChangelog", "method"="updatePostgresActionsSetPreparedStatementConfiguration"}
+ - method[fixDynamicBindingPathListForExistingActions] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="fix-dynamicBindingPathListForActions", "author"="", "class"="DatabaseChangelog", "method"="fixDynamicBindingPathListForExistingActions"}
+ - method[updateActionConfigurationTimeout] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-database-action-configuration-timeout", "author"="", "class"="DatabaseChangelog", "method"="updateActionConfigurationTimeout"}
+ - method[updateS3DatasourceConfigurationAndLabel] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-s3-datasource-configuration-and-label", "author"="", "class"="DatabaseChangelog", "method"="updateS3DatasourceConfigurationAndLabel"}
+ - method[changeAppLayoutTypeDefinition] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - Could not map 'Application.appLayout'. Maybe a fragment in 'AppLayout' is considered a simple type. Mapper continues with appLayout.
+ - Could not map 'Application.appLayout'. Maybe a fragment in 'AppLayout' is considered a simple type. Mapper continues with appLayout.
+ - APPLIED - ChangeEntry{, "id"="change-applayout-type-definition", "author"="", "class"="DatabaseChangelog", "method"="changeAppLayoutTypeDefinition"}
+ - method[clearExampleApps] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="clear-example-apps", "author"="", "class"="DatabaseChangelog", "method"="clearExampleApps"}
+ - method[updateMysqlPostgresMongoSslMode] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-mysql-postgres-mongo-ssl-mode", "author"="", "class"="DatabaseChangelog", "method"="updateMysqlPostgresMongoSslMode"}
+ - method[addCommentingPermissions] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-commenting-permissions", "author"="", "class"="DatabaseChangelog", "method"="addCommentingPermissions"}
+ - method[addGoogleSheetsPlugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-google-sheets-plugin", "author"="", "class"="DatabaseChangelog", "method"="addGoogleSheetsPlugin"}
+ - method[markInstanceAsUnregistered] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="mark-instance-unregistered", "author"="", "class"="DatabaseChangelog", "method"="markInstanceAsUnregistered"}
+ - method[createEntryInSequencePerOrganizationForDatasource] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="create-entry-in-sequence-per-organization-for-datasource", "author"="", "class"="DatabaseChangelog", "method"="createEntryInSequencePerOrganizationForDatasource"}
+ - method[migrateSmartSubstitutionDataTypeBoolean] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate, com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="migrate-smartSubstitution-dataType", "author"="", "class"="DatabaseChangelog", "method"="migrateSmartSubstitutionDataTypeBoolean"}
+ - method[updateMongoImportFromSrvField] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-mongo-import-from-srv-field", "author"="", "class"="DatabaseChangelog", "method"="updateMongoImportFromSrvField"}
+ - method[deleteMongoDatasourceStructures] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate, com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="delete-mongo-datasource-structures", "author"="", "class"="DatabaseChangelog", "method"="deleteMongoDatasourceStructures"}
+ - method[setMongoActionInputToRaw] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="set-mongo-actions-type-to-raw", "author"="", "class"="DatabaseChangelog", "method"="setMongoActionInputToRaw"}
+ - method[updateFirestoreWhereConditionsData] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-firestore-where-conditions-data", "author"="", "class"="DatabaseChangelog", "method"="updateFirestoreWhereConditionsData"}
+ - method[addApplicationExportPermissions] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-application-export-permissions", "author"="", "class"="DatabaseChangelog", "method"="addApplicationExportPermissions"}
+ - method[addSnowflakePlugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-snowflake-plugin", "author"="", "class"="DatabaseChangelog", "method"="addSnowflakePlugin"}
+ - method[migrateUpdateOneToUpdateManyMongoFormCommand] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="mongo-form-merge-update-commands", "author"="", "class"="DatabaseChangelog", "method"="migrateUpdateOneToUpdateManyMongoFormCommand"}
+ - method[ensureUserCreatedAndUpdatedAt] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="ensure-user-created-and-updated-at-fields", "author"="", "class"="DatabaseChangelog", "method"="ensureUserCreatedAndUpdatedAt"}
+ - method[addOrderToAllPagesOfApplication] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-and-update-order-for-all-pages", "author"="", "class"="DatabaseChangelog", "method"="addOrderToAllPagesOfApplication"}
+ - method[migrateRawInputTypeToRawCommand] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="mongo-form-migrate-raw", "author"="", "class"="DatabaseChangelog", "method"="migrateRawInputTypeToRawCommand"}
+ - method[addArangoDBPlugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-arangodb-plugin", "author"="", "class"="DatabaseChangelog", "method"="addArangoDBPlugin"}
+ - method[setSvgLogoToPluginIcons] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="set-svg-logo-to-plugins", "author"="", "class"="DatabaseChangelog", "method"="setSvgLogoToPluginIcons"}
+ - method[removePageOrderFieldFromApplicationPages] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="remove-order-field-from-application- pages", "author"="", "class"="DatabaseChangelog", "method"="removePageOrderFieldFromApplicationPages"}
+ - method[createPluginReferenceForGenerateCRUDPage] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="create-plugin-reference-for-genarate-CRUD-page", "author"="", "class"="DatabaseChangelog", "method"="createPluginReferenceForGenerateCRUDPage"}
+ - method[encryptCertificateAndPassword] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate, com.sun.proxy.$Proxy231]
+ - APPLIED - ChangeEntry{, "id"="encrypt-certificate", "author"="", "class"="DatabaseChangelog", "method"="encryptCertificateAndPassword"}
+ - method[createPluginReferenceForS3AndGSheetGenerateCRUDPage] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="create-plugin-reference-for-S3-GSheet-genarate-CRUD-page", "author"="", "class"="DatabaseChangelog", "method"="createPluginReferenceForS3AndGSheetGenerateCRUDPage"}
+ - method[addApplicationGitMetadataFieldAndIndex] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="application-git-metadata", "author"="", "class"="DatabaseChangelog", "method"="addApplicationGitMetadataFieldAndIndex"}
+ - method[addJSPlugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-js-plugin", "author"="", "class"="DatabaseChangelog", "method"="addJSPlugin"}
+ - method[updateGoogleSheetActionsSetSmartSubstitutionConfiguration] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-google-sheet-plugin-smartSubstitution-config", "author"="", "class"="DatabaseChangelog", "method"="updateGoogleSheetActionsSetSmartSubstitutionConfiguration"}
+ - method[uninstallMongoUqiPluginAndRemoveAllActions] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="uninstall-mongo-uqi-plugin", "author"="", "class"="DatabaseChangelog", "method"="uninstallMongoUqiPluginAndRemoveAllActions"}
+ - method[migrateMongoPluginToUqi] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="migrate-mongo-to-uqi", "author"="", "class"="DatabaseChangelog", "method"="migrateMongoPluginToUqi"}
+ - method[migrateMongoPluginDynamicBindingListUqi] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="migrate-mongo-uqi-dynamicBindingPathList", "author"="", "class"="DatabaseChangelog", "method"="migrateMongoPluginDynamicBindingListUqi"}
+ - method[updatePluginPackageNameIndexToPluginNamePackageNameAndVersion] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-plugin-package-name-index", "author"="", "class"="DatabaseChangelog", "method"="updatePluginPackageNameIndexToPluginNamePackageNameAndVersion"}
+ - method[deleteOrphanActions] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="delete-orphan-actions", "author"="", "class"="DatabaseChangelog", "method"="deleteOrphanActions"}
+ - method[migrateOldAppColorsToNewColors] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="migrate-old-app-color-to-new-colors", "author"="", "class"="DatabaseChangelog", "method"="migrateOldAppColorsToNewColors"}
+ - method[updateS3PermanentUrlToggleDefaultValue] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-s3-permanent-url-toggle-default-value", "author"="", "class"="DatabaseChangelog", "method"="updateS3PermanentUrlToggleDefaultValue"}
+ - method[updateGitApplicationMetadataIndex] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="application-git-metadata-index", "author"="", "class"="DatabaseChangelog", "method"="updateGitApplicationMetadataIndex"}
+ - method[migrateS3PluginToUqi] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="migrate-s3-to-uqi", "author"="", "class"="DatabaseChangelog", "method"="migrateS3PluginToUqi"}
+ - method[setSlugToApplicationAndPage] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="set-slug-to-application-and-page", "author"="", "class"="DatabaseChangelog", "method"="setSlugToApplicationAndPage"}
+ - method[removeUnusedTriggerPathsListWidget] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-list-widget-trigger-paths", "author"="", "class"="DatabaseChangelog", "method"="removeUnusedTriggerPathsListWidget"}
+ - method[updateS3ActionConfigurationBodyForContentTypeSupport] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-s3-action-configuration-for-type", "author"="", "class"="DatabaseChangelog", "method"="updateS3ActionConfigurationBodyForContentTypeSupport"}
+ - method[fixIsPublicIsSetFalseWhenAppIsPublic] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="fix-ispublic-is-false-for-public-apps", "author"="", "class"="DatabaseChangelog", "method"="fixIsPublicIsSetFalseWhenAppIsPublic"}
+ - method[updateJsActionsClientSideExecution] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-js-action-client-side-execution", "author"="", "class"="DatabaseChangelog", "method"="updateJsActionsClientSideExecution"}
+ - method[addSmtpPluginPlugin] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-smtp-plugin", "author"="", "class"="DatabaseChangelog", "method"="addSmtpPluginPlugin"}
+ - method[updateMockdbEndpoint] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-mockdb-endpoint", "author"="", "class"="DatabaseChangelog", "method"="updateMockdbEndpoint"}
+ - method[addPluginNameForGoogleSheets] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-google-sheets-plugin-name", "author"="", "class"="DatabaseChangelog", "method"="addPluginNameForGoogleSheets"}
+ - method[clearRedisCache] with arguments: [com.sun.proxy.$Proxy234]
+ - APPLIED - ChangeEntry{, "id"="flush-spring-redis-keys", "author"="", "class"="DatabaseChangelog", "method"="clearRedisCache"}
+ - method[insertDefaultResources] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="insert-default-resources", "author"="", "class"="DatabaseChangelog", "method"="insertDefaultResources"}
+ - method[migrateFirestorePluginToUqi] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="migrate-firestore-to-uqi", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePluginToUqi"}
+ - method[migrateFirestorePluginToUqi2] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="migrate-firestore-to-uqi-2", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePluginToUqi2"}
+ - method[migrateFirestorePaginationData] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="migrate-firestore-pagination-data", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePaginationData"}
+ - method[updateMongoMockdbEndpoint] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-mongodb-mockdb-endpoint", "author"="", "class"="DatabaseChangelog", "method"="updateMongoMockdbEndpoint"}
+ - method[migrateFirestorePluginToUqi3] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="migrate-firestore-to-uqi-3", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePluginToUqi3"}
+ - method[createSystemThemes] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="create-system-themes", "author"="", "class"="DatabaseChangelog", "method"="createSystemThemes"}
+ - method[addLimitFieldDataToMongoAggregateCommand] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-limit-field-data-to-mongo-aggregate-cmd", "author"="", "class"="DatabaseChangelog", "method"="addLimitFieldDataToMongoAggregateCommand"}
+ - method[updateGitIndexes] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-index-for-git", "author"="", "class"="DatabaseChangelog", "method"="updateGitIndexes"}
+ - method[updateMockdbEndpoint2] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-mockdb-endpoint-2", "author"="", "class"="DatabaseChangelog", "method"="updateMockdbEndpoint2"}
+ - method[migrateFromRSASha1ToECDSASha2Protocol] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="migrate-from-RSA-SHA1-to-ECDSA-SHA2-protocol-for-key-generation", "author"="", "class"="DatabaseChangelog", "method"="migrateFromRSASha1ToECDSASha2Protocol"}
+ - method[useAssetsCDNForPluginIcons] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="use-assets-cdn-for-plugin-icons", "author"="", "class"="DatabaseChangelog", "method"="useAssetsCDNForPluginIcons"}
+ - method[updateNewActionActionCollectionAndUserDataIndexes] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-index-for-newAction-actionCollection-userData", "author"="", "class"="DatabaseChangelog", "method"="updateNewActionActionCollectionAndUserDataIndexes"}
+ - method[markMSSQLCrudUnavailable] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="mark-mssql-crud-unavailable", "author"="", "class"="DatabaseChangelog", "method"="markMSSQLCrudUnavailable"}
+ - method[updateNewActionActionCollectionIndexes] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-index-for-newAction-actionCollection", "author"="", "class"="DatabaseChangelog", "method"="updateNewActionActionCollectionIndexes"}
+ - method[createSystemThemes2] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="create-system-themes-v2", "author"="", "class"="DatabaseChangelog", "method"="createSystemThemes2"}
+ - method[setFirestoreSmartSubstitutionToFalseForOldCommands] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="set-firestore-smart-substitution-to-false-for-old-cmds", "author"="", "class"="DatabaseChangelog", "method"="setFirestoreSmartSubstitutionToFalseForOldCommands"}
+ - method[fixPluginTitleCasing] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="fix-plugin-title-casing", "author"="", "class"="DatabaseChangelog2", "method"="fixPluginTitleCasing"}
+ - method[deprecateArchivedAtForNewAction] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="deprecate-archivedAt-in-action", "author"="", "class"="DatabaseChangelog2", "method"="deprecateArchivedAtForNewAction"}
+ - method[updateActionFormDataPath] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-form-data-for-uqi-mode", "author"="", "class"="DatabaseChangelog2", "method"="updateActionFormDataPath"}
+ - method[updateIsConfiguredFlagForAllTheExistingDatasources] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="add-isConfigured-flag-for-all-datasources", "author"="", "class"="DatabaseChangelog2", "method"="updateIsConfiguredFlagForAllTheExistingDatasources"}
+ - method[setDefaultApplicationVersion] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="set-application-version", "author"="", "class"="DatabaseChangelog2", "method"="setDefaultApplicationVersion"}
+ - method[deleteOrphanPages] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="delete-orphan-pages", "author"="", "class"="DatabaseChangelog2", "method"="deleteOrphanPages"}
+ - method[addIndexesForGit] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - APPLIED - ChangeEntry{, "id"="update-git-indexes", "author"="", "class"="DatabaseChangelog2", "method"="addIndexesForGit"}
+ - Mongock releasing the lock
+ - Mongock released the lock
+ - Mongock has finished
+ - Triggering registration of this instance...
+ - Opened connection [connectionId{localValue:8, serverValue:59}] to localhost:27017
+
+ █████╗ ██████╗ ██████╗ ███████╗███╗   ███╗██╗████████╗██╗  ██╗    ██╗███████╗    ██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗██╗███╗   ██╗ ██████╗ ██╗
+██╔══██╗██╔══██╗██╔══██╗██╔════╝████╗ ████║██║╚══██╔══╝██║  ██║    ██║██╔════╝    ██╔══██╗██║   ██║████╗  ██║████╗  ██║██║████╗  ██║██╔════╝ ██║
+███████║██████╔╝██████╔╝███████╗██╔████╔██║██║   ██║   ███████║    ██║███████╗    ██████╔╝██║   ██║██╔██╗ ██║██╔██╗ ██║██║██╔██╗ ██║██║  ███╗██║
+██╔══██║██╔═══╝ ██╔═══╝ ╚════██║██║╚██╔╝██║██║   ██║   ██╔══██║    ██║╚════██║    ██╔══██╗██║   ██║██║╚██╗██║██║╚██╗██║██║██║╚██╗██║██║   ██║╚═╝
+██║  ██║██║     ██║     ███████║██║ ╚═╝ ██║██║   ██║   ██║  ██║    ██║███████║    ██║  ██║╚██████╔╝██║ ╚████║██║ ╚████║██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝     ╚═╝╚═╝   ╚═╝   ╚═╝  ╚═╝    ╚═╝╚══════╝    ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+
+Please open http://localhost:<port> in your browser to experience Appsmith!
+
+ - Opened connection [connectionId{localValue:10, serverValue:61}] to localhost:27017
+ - Opened connection [connectionId{localValue:9, serverValue:60}] to localhost:27017
+ - Creating blank default organization for user 'baobaoack115@gmail.com'.
+ - javax.persistence.spi::No valid providers found.
+ - Adding organization Ng's apps with id 6295e37bdf07fb7dc5ce7a6e to user baobaoack115@gmail.com
+ - Login succeeded for user: User(name=Ng Bao, email=baobaoack115@gmail.com, roles=null, password=$2a$10$hjEz9Wwdk5GUERb3kGTpCOjryq9b/4elAhZUgNaFfUdTV9qFzn/o., passwordResetInitiated=false, source=FORM, state=ACTIVATED, isEnabled=true, currentOrganizationId=6295e37bdf07fb7dc5ce7a6e, organizationIds=[6295e37bdf07fb7dc5ce7a6e], examplesOrganizationId=null, groupIds=[], permissions=[], inviteToken=null, isAnonymous=false)
+ - Got request to send email to: baobaoack115@gmail.com with subject: Welcome to Appsmith
+ - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: com.appsmith.server.exceptions.AppsmithException: Unauthorized access
+Caused by: com.appsmith.server.exceptions.AppsmithException: Unauthorized access
+	at com.appsmith.server.solutions.ce.EnvManagerCEImpl.verifyCurrentUserIsSuper(EnvManagerCEImpl.java:449)
+	at com.appsmith.server.solutions.ce.EnvManagerCEImpl.restart(EnvManagerCEImpl.java:458)
+	at com.appsmith.server.solutions.ce.EnvManagerCEImpl.lambda$applyChanges$3(EnvManagerCEImpl.java:286)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:249)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:284)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:187)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:232)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:157)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:118)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:249)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+	at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:345)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:250)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoCollectList$MonoCollectListSubscriber.onComplete(MonoCollectList.java:128)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onComplete(Operators.java:2058)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onComplete(MonoFlatMapMany.java:260)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:368)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onComplete(FluxConcatMap.java:276)
+	at reactor.core.publisher.FluxCreate$BaseSink.complete(FluxCreate.java:439)
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:784)
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.complete(FluxCreate.java:732)
+	at reactor.core.publisher.FluxCreate$SerializedFluxSink.drainLoop(FluxCreate.java:240)
+	at reactor.core.publisher.FluxCreate$SerializedFluxSink.drain(FluxCreate.java:206)
+	at reactor.core.publisher.FluxCreate$SerializedFluxSink.complete(FluxCreate.java:197)
+	at com.mongodb.reactivestreams.client.internal.BatchCursorFlux.lambda$recurseCursor$4(BatchCursorFlux.java:98)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:171)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.success(MonoCreate.java:165)
+	at com.mongodb.reactivestreams.client.internal.MongoOperationPublisher.lambda$sinkToCallback$30(MongoOperationPublisher.java:550)
+	at com.mongodb.internal.operation.AsyncQueryBatchCursor.next(AsyncQueryBatchCursor.java:207)
+	at com.mongodb.internal.operation.AsyncQueryBatchCursor.next(AsyncQueryBatchCursor.java:146)
+	at com.mongodb.reactivestreams.client.internal.BatchCursor.lambda$next$0(BatchCursor.java:35)
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:57)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4515)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4232)
+	at com.mongodb.reactivestreams.client.internal.BatchCursorFlux.recurseCursor(BatchCursorFlux.java:104)
+	at com.mongodb.reactivestreams.client.internal.BatchCursorFlux.lambda$subscribe$0(BatchCursorFlux.java:56)
+	at reactor.core.publisher.LambdaMonoSubscriber.onNext(LambdaMonoSubscriber.java:171)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:127)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1816)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:249)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.MonoCreate$DefaultMonoSink.success(MonoCreate.java:165)
+	at com.mongodb.reactivestreams.client.internal.MongoOperationPublisher.lambda$sinkToCallback$30(MongoOperationPublisher.java:550)
+	at com.mongodb.reactivestreams.client.internal.OperationExecutorImpl.lambda$execute$2(OperationExecutorImpl.java:73)
+	at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:48)
+	at com.mongodb.internal.operation.FindOperation$3.onResult(FindOperation.java:755)
+	at com.mongodb.internal.operation.OperationHelper$ReferenceCountedReleasingWrappedCallback.onResult(OperationHelper.java:532)
+	at com.mongodb.internal.operation.CommandOperationHelper$10.onResult(CommandOperationHelper.java:483)
+	at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:48)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor$2.onResult(DefaultServer.java:286)
+	at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:48)
+	at com.mongodb.internal.connection.CommandProtocolImpl$1.onResult(CommandProtocolImpl.java:84)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection$2.onResult(DefaultConnectionPool.java:530)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection$2.onResult(UsageTrackingInternalConnection.java:142)
+	at com.mongodb.internal.async.ErrorHandlingResultCallback.onResult(ErrorHandlingResultCallback.java:48)
+	at com.mongodb.internal.connection.InternalStreamConnection$2$1.onResult(InternalStreamConnection.java:462)
+	at com.mongodb.internal.connection.InternalStreamConnection$2$1.onResult(InternalStreamConnection.java:439)
+	at com.mongodb.internal.connection.InternalStreamConnection$MessageHeaderCallback$MessageCallback.onResult(InternalStreamConnection.java:744)
+	at com.mongodb.internal.connection.InternalStreamConnection$MessageHeaderCallback$MessageCallback.onResult(InternalStreamConnection.java:711)
+	at com.mongodb.internal.connection.InternalStreamConnection$5.completed(InternalStreamConnection.java:581)
+	at com.mongodb.internal.connection.InternalStreamConnection$5.completed(InternalStreamConnection.java:578)
+	at com.mongodb.connection.netty.NettyStream.readAsync(NettyStream.java:322)
+	at com.mongodb.connection.netty.NettyStream.readAsync(NettyStream.java:269)
+	at com.mongodb.internal.connection.InternalStreamConnection.readAsync(InternalStreamConnection.java:578)
+	at com.mongodb.internal.connection.InternalStreamConnection.access$1100(InternalStreamConnection.java:78)
+	at com.mongodb.internal.connection.InternalStreamConnection$MessageHeaderCallback.onResult(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection$MessageHeaderCallback.onResult(InternalStreamConnection.java:686)
+	at com.mongodb.internal.connection.InternalStreamConnection$5.completed(InternalStreamConnection.java:581)
+	at com.mongodb.internal.connection.InternalStreamConnection$5.completed(InternalStreamConnection.java:578)
+	at com.mongodb.connection.netty.NettyStream.readAsync(NettyStream.java:322)
+	at com.mongodb.connection.netty.NettyStream.handleReadResponse(NettyStream.java:350)
+	at com.mongodb.connection.netty.NettyStream.access$1200(NettyStream.java:104)
+	at com.mongodb.connection.netty.NettyStream$InboundBufferHandler.channelRead0(NettyStream.java:409)
+	at com.mongodb.connection.netty.NettyStream$InboundBufferHandler.channelRead0(NettyStream.java:406)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=a2a39cb7-3774-4d1d-9db7-4b3ddc594a56 - Checking if feature LINTING is active for user baobaoack115@gmail.com
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=a2a39cb7-3774-4d1d-9db7-4b3ddc594a56 - Checking if feature MULTIPLAYER is active for user baobaoack115@gmail.com
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=fc20c1d7-a1d3-4745-a1c2-eb557058c072 - Going to get all unpublished action collections with params: {applicationId=[6295e37bdf07fb7dc5ce7a6f]}, branch: null
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=6b669e94-2b28-46b8-98ca-c0e0621d584b - Going to get all actions with params: {applicationId=[6295e37bdf07fb7dc5ce7a6f]}, branch: null
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=f80102f0-89aa-48b4-82be-1535f288a3f4 - Going to get all resources from base controller {organizationId=[6295e37bdf07fb7dc5ce7a6e]}
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=d0dcb7b3-bf39-413e-ab45-db09d0a59699 - Going to get all resources from base controller {organizationId=[6295e37bdf07fb7dc5ce7a6e]}
+ - Fetching plugins by params: {organizationId=[6295e37bdf07fb7dc5ce7a6e]} for org: Ng's apps
+ - Error loading templates metadata in plugin restapi-plugin
+ - Error loading templates metadata in plugin rapidapi-plugin
+ - Error loading templates metadata in plugin elasticsearch-plugin
+ - Error loading templates metadata in plugin dynamo-plugin
+ - Error loading templates metadata in plugin redis-plugin
+ - Error loading templates metadata in plugin firestore-plugin
+ - Error loading templates metadata in plugin redshift-plugin
+ - Error loading templates metadata in plugin amazons3-plugin
+ - Error loading templates metadata in plugin google-sheets-plugin
+ - Error loading templates metadata in plugin js-plugin
+ - Error loading templates metadata in plugin smtp-plugin
+ - Error loading templates metadata in plugin saas-plugin
+ - update layout received for page 6295e37bdf07fb7dc5ce7a72
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=ca1334b0-58a5-43c2-a860-8651c57ac79a - Going to get resource from base controller for id: 6295e37bdf07fb7dc5ce7a6e
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=344b89f4-3d33-45c3-a44b-06a588eadc9c - Going to get all applications grouped by organization
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=59042c2b-b443-4d87-806e-afb106d35ad5 - Going to get all applications grouped by organization
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=007b67c0-3e21-41b0-93b6-fe8243ccc890 - Going to get all resources from base controller {}
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=f4e18aec-b9ed-455a-a758-b42ae3e03f73 - Going to import application in organization with id: 6295e37bdf07fb7dc5ce7a6e
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=6727b1a0-bb9d-4a64-b9c3-9eca6b349f37 - Going to get all actions with params: {applicationId=[6295e385df07fb7dc5ce7a75]}, branch: null
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=0bc1561f-e524-4a9c-b329-76187b6baae2 - Going to get all unpublished action collections with params: {applicationId=[6295e385df07fb7dc5ce7a75]}, branch: null
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=5ac3276a-6ef1-402d-9a5b-a7d7bd035697 - Going to get all resources from base controller {organizationId=[6295e37bdf07fb7dc5ce7a6e]}
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=271460ce-972e-4c3a-be19-6c07dd71ed0d - Going to get all resources from base controller {organizationId=[6295e37bdf07fb7dc5ce7a6e]}
+ - Fetching plugins by params: {organizationId=[6295e37bdf07fb7dc5ce7a6e]} for org: Ng's apps
+ - Opened connection [connectionId{localValue:11, serverValue:62}] to localhost:27017
+ - [nioEventLoopGroup-3-8]Execute Action called in Page 6295e385df07fb7dc5ce7a77, for action id : 6295e385df07fb7dc5ce7a79  action name : getCustomers
+ - Datasource context doesn't exist. Creating connection.
+elastic-8: Connecting to Postgres db
+ - HikariPool-1 - Starting...
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=bf13d7db-173b-41c9-b4e3-69fc14a68a2d - Going to get all applications grouped by organization
+ - update layout received for page 6295e385df07fb7dc5ce7a77
+ - HikariPool-1 - Start completed.
+elastic-9: Before executing postgres query [SELECT * FROM user_data ORDER BY id LIMIT 10;] Hikari Pool stats : active - 1, idle - 0, awaiting - 0, total - 1
+elastic-9: After executing postgres query, Hikari Pool stats active - 1, idle - 0, awaiting - 0, total - 1
+elastic-9: In the PostgresPlugin, got action execution result
+ - elastic-9: Action getCustomers with id 6295e385df07fb7dc5ce7a79 execution time : 4453 ms
+ - [nioEventLoopGroup-3-6]Execute Action called in Page 6295e385df07fb7dc5ce7a77, for action id : 6295e385df07fb7dc5ce7a78  action name : updateCustomerInfo
+ - Resource context exists. Returning the same.
+elastic-9: Before executing postgres query [UPDATE user_data SET name = 'Uvuvuuvuvosa', email = 'test@test.com', country = 'Singapore' WHERE id = 1] Hikari Pool stats : active - 1, idle - 1, awaiting - 0, total - 2
+elastic-9: After executing postgres query, Hikari Pool stats active - 1, idle - 1, awaiting - 0, total - 2
+elastic-9: In the PostgresPlugin, got action execution result
+ - elastic-9: Action updateCustomerInfo with id 6295e385df07fb7dc5ce7a78 execution time : 550 ms
+ - [nioEventLoopGroup-3-6]Execute Action called in Page 6295e385df07fb7dc5ce7a77, for action id : 6295e385df07fb7dc5ce7a79  action name : getCustomers
+ - Resource context exists. Returning the same.
+elastic-9: Before executing postgres query [SELECT * FROM user_data ORDER BY id LIMIT 10;] Hikari Pool stats : active - 1, idle - 1, awaiting - 0, total - 2
+elastic-9: After executing postgres query, Hikari Pool stats active - 1, idle - 1, awaiting - 0, total - 2
+elastic-9: In the PostgresPlugin, got action execution result
+ - elastic-9: Action getCustomers with id 6295e385df07fb7dc5ce7a79 execution time : 517 ms
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=68856e45-a7ad-4c95-9d4a-40368a3041f9 - Going to get all resources from base controller {}
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=327bebdf-c4e5-4409-8d4f-8bc776b24e97 - Getting all env configuration
+userEmail=baobaoack115@gmail.com, sessionId=d42e47fe-be10-4503-8d05-29d507ff21c3, thread=lettuce-epollEventLoop-6-1, requestId=1d6a094f-a7ca-4aa3-8a07-897c7d2c1096 - Going to get all applications grouped by organization

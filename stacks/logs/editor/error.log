@@ -1,0 +1,111 @@
++ http_conf=/opt/appsmith/templates/nginx-app-http.conf.template.sh
++ https_conf=/opt/appsmith/templates/nginx-app-https.conf.template.sh
++ ssl_conf_path=/appsmith-stacks/data/certificate/conf
++ APP_TEMPLATE=/opt/appsmith/templates/nginx-app-http.conf.template.sh
++ mkdir -pv /appsmith-stacks/data/certificate/conf
++ cat
++ cat
++ [[ -n '' ]]
++ bash /opt/appsmith/templates/nginx-app-http.conf.template.sh ''
++ index_html_served=/opt/appsmith/editor/index.html
++ index_html_original=/opt/appsmith/index.html.original
++ [[ ! -f /opt/appsmith/index.html.original ]]
++ cp -v /opt/appsmith/editor/index.html /opt/appsmith/index.html.original
++ node -e '
+const fs = require("fs")
+const content = fs.readFileSync("/opt/appsmith/index.html.original", "utf8").replace(
+  /\b__(APPSMITH_[A-Z0-9_]+)__\b/g,
+  (placeholder, name) => (process.env[name] || "")
+)
+fs.writeFileSync("/opt/appsmith/editor/index.html", content)
+'
++ exec nginx -g 'daemon off;error_log stderr info;'
+2022/05/31 09:18:24 [notice] 188#188: using the "epoll" event method
+2022/05/31 09:18:24 [notice] 188#188: nginx/1.18.0 (Ubuntu)
+2022/05/31 09:18:24 [notice] 188#188: OS: Linux 5.10.102.1-microsoft-standard-WSL2
+2022/05/31 09:18:24 [notice] 188#188: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/05/31 09:18:24 [notice] 188#188: start worker processes
+2022/05/31 09:18:24 [notice] 188#188: start worker process 228
+2022/05/31 09:18:24 [notice] 188#188: start worker process 229
+2022/05/31 09:18:24 [notice] 188#188: start worker process 230
+2022/05/31 09:18:24 [notice] 188#188: start worker process 231
+2022/05/31 09:18:24 [notice] 188#188: start worker process 232
+2022/05/31 09:18:24 [notice] 188#188: start worker process 233
+2022/05/31 09:18:24 [notice] 188#188: start worker process 234
+2022/05/31 09:18:24 [notice] 188#188: start worker process 235
+2022/05/31 09:18:24 [notice] 188#188: start worker process 236
+2022/05/31 09:18:24 [notice] 188#188: start worker process 237
+2022/05/31 09:18:24 [notice] 188#188: start worker process 238
+2022/05/31 09:18:24 [notice] 188#188: start worker process 239
+2022/05/31 09:18:24 [notice] 188#188: start worker process 240
+2022/05/31 09:18:24 [notice] 188#188: start worker process 243
+2022/05/31 09:18:24 [notice] 188#188: start worker process 244
+2022/05/31 09:18:24 [notice] 188#188: start worker process 246
+2022/05/31 09:47:01 [notice] 188#188: signal 3 (SIGQUIT) received from 1, shutting down
+2022/05/31 09:47:01 [notice] 228#228: gracefully shutting down
+2022/05/31 09:47:01 [notice] 229#229: gracefully shutting down
+2022/05/31 09:47:01 [notice] 231#231: gracefully shutting down
+2022/05/31 09:47:01 [notice] 237#237: gracefully shutting down
+2022/05/31 09:47:01 [notice] 236#236: gracefully shutting down
+2022/05/31 09:47:01 [notice] 237#237: exiting
+2022/05/31 09:47:01 [notice] 233#233: gracefully shutting down
+2022/05/31 09:47:01 [notice] 236#236: exiting
+2022/05/31 09:47:01 [notice] 240#240: gracefully shutting down
+2022/05/31 09:47:01 [notice] 232#232: gracefully shutting down
+2022/05/31 09:47:01 [notice] 238#238: gracefully shutting down
+2022/05/31 09:47:01 [notice] 240#240: exiting
+2022/05/31 09:47:01 [notice] 234#234: gracefully shutting down
+2022/05/31 09:47:01 [notice] 238#238: exiting
+2022/05/31 09:47:01 [notice] 243#243: gracefully shutting down
+2022/05/31 09:47:01 [notice] 233#233: exiting
+2022/05/31 09:47:01 [notice] 239#239: gracefully shutting down
+2022/05/31 09:47:01 [notice] 230#230: gracefully shutting down
+2022/05/31 09:47:01 [notice] 246#246: gracefully shutting down
+2022/05/31 09:47:01 [notice] 243#243: exiting
+2022/05/31 09:47:01 [notice] 246#246: exiting
+2022/05/31 09:47:01 [notice] 229#229: exiting
+2022/05/31 09:47:01 [notice] 235#235: gracefully shutting down
+2022/05/31 09:47:01 [notice] 230#230: exiting
+2022/05/31 09:47:01 [notice] 244#244: gracefully shutting down
+2022/05/31 09:47:01 [notice] 235#235: exiting
+2022/05/31 09:47:01 [notice] 232#232: exiting
+2022/05/31 09:47:01 [notice] 239#239: exiting
+2022/05/31 09:47:01 [notice] 244#244: exiting
+2022/05/31 09:47:01 [notice] 231#231: exiting
+2022/05/31 09:47:01 [notice] 234#234: exiting
+2022/05/31 09:47:01 [notice] 243#243: exit
+2022/05/31 09:47:01 [notice] 233#233: exit
+2022/05/31 09:47:01 [notice] 238#238: exit
+2022/05/31 09:47:01 [notice] 240#240: exit
+2022/05/31 09:47:01 [notice] 246#246: exit
+2022/05/31 09:47:01 [notice] 231#231: exit
+2022/05/31 09:47:01 [notice] 237#237: exit
+2022/05/31 09:47:01 [notice] 232#232: exit
+2022/05/31 09:47:01 [notice] 230#230: exit
+2022/05/31 09:47:01 [notice] 239#239: exit
+2022/05/31 09:47:01 [notice] 229#229: exit
+2022/05/31 09:47:01 [notice] 235#235: exit
+2022/05/31 09:47:01 [notice] 244#244: exit
+2022/05/31 09:47:01 [notice] 236#236: exit
+2022/05/31 09:47:01 [notice] 234#234: exit
+2022/05/31 09:47:01 [notice] 188#188: signal 17 (SIGCHLD) received from 229
+2022/05/31 09:47:01 [notice] 188#188: worker process 229 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: worker process 232 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: signal 29 (SIGIO) received
+2022/05/31 09:47:01 [notice] 188#188: signal 17 (SIGCHLD) received from 231
+2022/05/31 09:47:01 [notice] 188#188: worker process 230 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: worker process 231 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: worker process 233 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: worker process 234 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: worker process 235 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: worker process 236 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: worker process 237 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: worker process 238 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: worker process 239 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: worker process 240 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: worker process 243 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: worker process 246 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: signal 29 (SIGIO) received
+2022/05/31 09:47:01 [notice] 188#188: signal 17 (SIGCHLD) received from 238
+2022/05/31 09:47:01 [notice] 188#188: worker process 244 exited with code 0
+2022/05/31 09:47:01 [notice] 188#188: signal 29 (SIGIO) received

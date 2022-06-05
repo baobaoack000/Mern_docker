@@ -1,0 +1,35 @@
+Load environment configuration
+(node:183) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+RTS version v1.7.0 running at http://localhost:8091
+Watching MongoDB
+Error in socket connected handler TypeError: Cannot read property 'match' of undefined
+    at /opt/appsmith/rts/server.js:163:52
+    at Generator.next (<anonymous>)
+    at /opt/appsmith/rts/server.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/opt/appsmith/rts/server.js:4:12)
+    at tryAuth (/opt/appsmith/rts/server.js:153:12)
+    at /opt/appsmith/rts/server.js:133:37
+    at Generator.next (<anonymous>)
+    at /opt/appsmith/rts/server.js:8:71
+    at new Promise (<anonymous>)
+Error in socket connected handler TypeError: Cannot read property 'match' of undefined
+    at /opt/appsmith/rts/server.js:163:52
+    at Generator.next (<anonymous>)
+    at /opt/appsmith/rts/server.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/opt/appsmith/rts/server.js:4:12)
+    at tryAuth (/opt/appsmith/rts/server.js:153:12)
+    at /opt/appsmith/rts/server.js:141:37
+    at Generator.next (<anonymous>)
+    at /opt/appsmith/rts/server.js:8:71
+    at new Promise (<anonymous>)
+ns:/page/edit# socket PCcoN-tb8wJveWYCAAAF joined the room page:6295e37bdf07fb7dc5ce7a72
+ns:/# socket kwZ8PPRmkGY9wm6nAAAE joined the room app:6295e37bdf07fb7dc5ce7a6f
+ns:/# socket kwZ8PPRmkGY9wm6nAAAE left the room app:6295e37bdf07fb7dc5ce7a6f
+ns:/# socket kwZ8PPRmkGY9wm6nAAAE joined the room app:6295e37bdf07fb7dc5ce7a6f
+ns:/# socket kwZ8PPRmkGY9wm6nAAAE left the room app:6295e37bdf07fb7dc5ce7a6f
+ns:/page/edit # socket PCcoN-tb8wJveWYCAAAF left the room page:6295e37bdf07fb7dc5ce7a72
+ns:/page/edit# socket PCcoN-tb8wJveWYCAAAF joined the room page:6295e385df07fb7dc5ce7a77
+ns:/page/edit # socket PCcoN-tb8wJveWYCAAAF left the room page:6295e385df07fb7dc5ce7a77

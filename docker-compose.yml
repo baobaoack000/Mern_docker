@@ -35,7 +35,7 @@ services:
     expose:
       - 3000
   mongo:
-    container_name: mongodb
+    container_name: mongo1
     restart: always
     image: mongo:5.0
     ports:
@@ -47,11 +47,22 @@ services:
       - ./backend/db:/data/db
     networks:
       express-mongo:
-        ipv4_address: 172.16.0.1
-    command: mongod --bind_ip 127.0.0.1,172.16.0.1
+        ipv4_address: 172.16.0.2
+
+    entrypoint: ["mongod", "--bind_ip", "127.0.0.1"]
     expose:
       - 27017
-
+  appsmith:
+    image: index.docker.io/appsmith/appsmith-ce
+    container_name: appsmith
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./stacks:/appsmith-stacks
+    restart: unless-stopped
+    networks:
+      express-mongo:
   hadolint:
     container_name: hadolint
     image: hadolint/hadolint:v1.17.5
@@ -76,6 +87,5 @@ networks:
     ipam:
       driver: default
       config:
-       - subnet: 172.16.0.0/24
-         gateway: 172.16.0.254
+        - subnet: 172.16.0.0/24
   hadolint:
