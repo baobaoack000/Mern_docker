@@ -33,3 +33,26 @@ ns:/# socket kwZ8PPRmkGY9wm6nAAAE left the room app:6295e37bdf07fb7dc5ce7a6f
 ns:/page/edit # socket PCcoN-tb8wJveWYCAAAF left the room page:6295e37bdf07fb7dc5ce7a72
 ns:/page/edit# socket PCcoN-tb8wJveWYCAAAF joined the room page:6295e385df07fb7dc5ce7a77
 ns:/page/edit # socket PCcoN-tb8wJveWYCAAAF left the room page:6295e385df07fb7dc5ce7a77
+Load environment configuration
+(node:31) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+RTS version v1.7.0 running at http://localhost:8091
+Error watching MongoDB MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Timeout._onTimeout (/opt/appsmith/rts/node_modules/mongodb/lib/core/sdam/topology.js:438:30)
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7) {
+  reason: TopologyDescription {
+    type: 'Single',
+    setName: null,
+    maxSetVersion: null,
+    maxElectionId: null,
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    compatibilityError: null,
+    logicalSessionTimeoutMinutes: null,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    commonWireVersion: null
+  }
+}

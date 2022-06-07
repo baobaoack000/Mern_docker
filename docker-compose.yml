@@ -84,6 +84,7 @@ services:
 networks:
   react-express:
   express-mongo:
+    driver: bridge
     ipam:
       driver: default
       config:
