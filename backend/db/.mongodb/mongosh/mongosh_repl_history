@@ -1,0 +1,29 @@
+db.startup_log.find()
+show collections
+use local
+show collections
+use config
+db.system.sessions.find()
+show collections
+db
+sb
+use config
+show dbs
+db.system.version.find()
+db.collection.find()
+admin.collection.find()
+db.collection.find()
+admin.coll.getIndexes()
+admin.coll.getIndexes
+admin.coll.system.version.coll.getIndexes
+system.version.coll.getIndexes()
+use system.version
+show collections
+db
+sb
+use admin
+db
+show dbs
+show db
+db
+dbs

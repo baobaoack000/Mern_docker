@@ -1,58 +1,48 @@
 Load environment configuration
-(node:183) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(node:1533) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
 (Use `node --trace-warnings ...` to show where the warning was created)
-RTS version v1.7.0 running at http://localhost:8091
+RTS version v1.7.1 running at http://localhost:8091
 Watching MongoDB
-Error in socket connected handler TypeError: Cannot read property 'match' of undefined
-    at /opt/appsmith/rts/server.js:163:52
-    at Generator.next (<anonymous>)
-    at /opt/appsmith/rts/server.js:8:71
-    at new Promise (<anonymous>)
-    at __awaiter (/opt/appsmith/rts/server.js:4:12)
-    at tryAuth (/opt/appsmith/rts/server.js:153:12)
-    at /opt/appsmith/rts/server.js:133:37
-    at Generator.next (<anonymous>)
-    at /opt/appsmith/rts/server.js:8:71
-    at new Promise (<anonymous>)
-Error in socket connected handler TypeError: Cannot read property 'match' of undefined
-    at /opt/appsmith/rts/server.js:163:52
-    at Generator.next (<anonymous>)
-    at /opt/appsmith/rts/server.js:8:71
-    at new Promise (<anonymous>)
-    at __awaiter (/opt/appsmith/rts/server.js:4:12)
-    at tryAuth (/opt/appsmith/rts/server.js:153:12)
-    at /opt/appsmith/rts/server.js:141:37
-    at Generator.next (<anonymous>)
-    at /opt/appsmith/rts/server.js:8:71
-    at new Promise (<anonymous>)
-ns:/page/edit# socket PCcoN-tb8wJveWYCAAAF joined the room page:6295e37bdf07fb7dc5ce7a72
-ns:/# socket kwZ8PPRmkGY9wm6nAAAE joined the room app:6295e37bdf07fb7dc5ce7a6f
-ns:/# socket kwZ8PPRmkGY9wm6nAAAE left the room app:6295e37bdf07fb7dc5ce7a6f
-ns:/# socket kwZ8PPRmkGY9wm6nAAAE joined the room app:6295e37bdf07fb7dc5ce7a6f
-ns:/# socket kwZ8PPRmkGY9wm6nAAAE left the room app:6295e37bdf07fb7dc5ce7a6f
-ns:/page/edit # socket PCcoN-tb8wJveWYCAAAF left the room page:6295e37bdf07fb7dc5ce7a72
-ns:/page/edit# socket PCcoN-tb8wJveWYCAAAF joined the room page:6295e385df07fb7dc5ce7a77
-ns:/page/edit # socket PCcoN-tb8wJveWYCAAAF left the room page:6295e385df07fb7dc5ce7a77
+Caught exception: TypeError: Cannot read property 'clusterTime' of undefined
+Exception origin: uncaughtException
+/opt/appsmith/rts/node_modules/mongodb/lib/core/wireprotocol/command.js:53
+      session.clusterTime.clusterTime.greaterThan(clusterTime.clusterTime)
+                                                              ^
+
+TypeError: Cannot read property 'clusterTime' of undefined
+    at _command (/opt/appsmith/rts/node_modules/mongodb/lib/core/wireprotocol/command.js:53:63)
+    at command (/opt/appsmith/rts/node_modules/mongodb/lib/core/wireprotocol/command.js:28:5)
+    at Object.getMore (/opt/appsmith/rts/node_modules/mongodb/lib/core/wireprotocol/get_more.js:92:3)
+    at Connection.getMore (/opt/appsmith/rts/node_modules/mongodb/lib/cmap/connection.js:179:8)
+    at /opt/appsmith/rts/node_modules/mongodb/lib/core/sdam/server.js:333:12
+    at Object.callback (/opt/appsmith/rts/node_modules/mongodb/lib/cmap/connection_pool.js:345:7)
+    at processWaitQueue (/opt/appsmith/rts/node_modules/mongodb/lib/cmap/connection_pool.js:468:23)
+    at /opt/appsmith/rts/node_modules/mongodb/lib/cmap/connection_pool.js:236:28
+    at processTicksAndRejections (internal/process/task_queues.js:77:11)
 Load environment configuration
-(node:31) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(node:1722) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
 (Use `node --trace-warnings ...` to show where the warning was created)
-RTS version v1.7.0 running at http://localhost:8091
-Error watching MongoDB MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
-    at Timeout._onTimeout (/opt/appsmith/rts/node_modules/mongodb/lib/core/sdam/topology.js:438:30)
-    at listOnTimeout (internal/timers.js:557:17)
-    at processTimers (internal/timers.js:500:7) {
-  reason: TopologyDescription {
-    type: 'Single',
-    setName: null,
-    maxSetVersion: null,
-    maxElectionId: null,
-    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
-    stale: false,
-    compatible: true,
-    compatibilityError: null,
-    logicalSessionTimeoutMinutes: null,
-    heartbeatFrequencyMS: 10000,
-    localThresholdMS: 15,
-    commonWireVersion: null
-  }
-}
+RTS version v1.7.1 running at http://localhost:8091
+Watching MongoDB
+ns:/page/edit# socket Lhq7UGdeRHyHT51SAAAF joined the room page:62a068f7b242ac0314bbdb25
+ns:/# socket Kr8NjoXqmgIcWgdGAAAE joined the room app:62a068f6b242ac0314bbdb22
+ns:/# socket Kr8NjoXqmgIcWgdGAAAE left the room app:62a068f6b242ac0314bbdb22
+ns:/# socket Kr8NjoXqmgIcWgdGAAAE joined the room app:62a068f6b242ac0314bbdb22
+ns:/# socket Kr8NjoXqmgIcWgdGAAAE left the room app:62a068f6b242ac0314bbdb22
+ns:/page/edit # socket Lhq7UGdeRHyHT51SAAAF left the room page:62a068f7b242ac0314bbdb25
+Load environment configuration
+(node:1384) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+RTS version v1.7.1 running at http://localhost:8091
+Watching MongoDB
+ns:/page/edit# socket 6z1wlM2TyVQ_pUaEAAAF joined the room page:62a068f7b242ac0314bbdb25
+ns:/# socket qew11EKT-zyMCUoYAAAE joined the room app:62a068f6b242ac0314bbdb22
+ns:/# socket qew11EKT-zyMCUoYAAAE left the room app:62a068f6b242ac0314bbdb22
+ns:/# socket qew11EKT-zyMCUoYAAAE joined the room app:62a068f6b242ac0314bbdb22
+Load environment configuration
+(node:1384) Warning: Accessing non-existent property 'MongoError' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+RTS version v1.7.1 running at http://localhost:8091
+Watching MongoDB
+ns:/# socket 6m_e9MB3j0xiybUUAAAE joined the room app:62a068f6b242ac0314bbdb22
+ns:/page/edit# socket Hf6nP23hCqB4rmJpAAAF joined the room page:62a068f7b242ac0314bbdb25
