@@ -2002,3 +2002,943 @@ Caused by: java.nio.channels.ClosedChannelException: null
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	... 1 common frames omitted
+Load environment configuration
+/opt/appsmith/run-java.sh: line 22: isset: command not found
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/appsmith/backend/server.jar!/BOOT-INF/lib/logback-classic-1.2.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/appsmith/backend/server.jar!/BOOT-INF/lib/slf4j-log4j12-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+ - Starting ServerApplication vv1.7.1 using Java 11.0.15 on ba8bdb618000 with PID 1381 (/opt/appsmith/backend/server.jar started by root in /opt/appsmith/backend)
+ - Running with Spring Boot v2.5.9, Spring v5.3.15
+ - No active profile set, falling back to default profiles: default
+ - Multiple Spring Data modules found, entering strict repository configuration mode!
+ - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+ - Finished Spring Data repository scanning in 983 ms. Found 55 Reactive MongoDB repository interfaces.
+ - Multiple Spring Data modules found, entering strict repository configuration mode!
+ - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ActionCollectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.TenantRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.AssetRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.NotificationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ProviderRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.CollectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.UsagePulseRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.LayoutRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.CommentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ConfigRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PermissionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PluginRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PageRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PasswordResetTokenRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.UsagePulseRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.DatasourceRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.UserDataRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ThemeRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.UserRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.CollectionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ActionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ProviderRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.TenantRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ActionCollectionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ApiTemplateRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.InviteUserRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.NewActionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.NotificationRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.CommentRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.CommentThreadRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PageRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ApplicationRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.NewPageRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.LayoutRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.GroupRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PluginRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ConfigRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.WorkspaceRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PasswordResetTokenRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PermissionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.AssetRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.CommentThreadRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ApplicationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ApiTemplateRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.DatasourceRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.InviteUserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.NewActionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.UserDataRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.GroupRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ThemeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.NewPageRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ActionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.WorkspaceRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.GitDeployKeysRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Finished Spring Data repository scanning in 187 ms. Found 0 Redis repository interfaces.
+ - Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:508)
+	at com.mongodb.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:476)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:27017
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+ - Enabled plugins: []
+ - Disabled plugins: []
+ - PF4J version 3.5.0 in 'deployment' mode
+ - Plugin 'rapidapi-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'postgres-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'saas-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'snowflake-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'elasticsearch-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'mssql-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'redshift-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'mongo-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'google-sheets-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'js-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'smtp-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'amazons3-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'mysql-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'dynamo-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'arangodb-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'restapi-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'redis-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'firestore-plugin@1.0-SNAPSHOT' resolved
+ - Start plugin 'rapidapi-plugin@1.0-SNAPSHOT'
+ - Start plugin 'postgres-plugin@1.0-SNAPSHOT'
+ - Start plugin 'saas-plugin@1.0-SNAPSHOT'
+ - Start plugin 'snowflake-plugin@1.0-SNAPSHOT'
+ - Start plugin 'elasticsearch-plugin@1.0-SNAPSHOT'
+ - Start plugin 'mssql-plugin@1.0-SNAPSHOT'
+ - Start plugin 'redshift-plugin@1.0-SNAPSHOT'
+ - Start plugin 'mongo-plugin@1.0-SNAPSHOT'
+ - Start plugin 'google-sheets-plugin@1.0-SNAPSHOT'
+ - Start plugin 'js-plugin@1.0-SNAPSHOT'
+ - Start plugin 'smtp-plugin@1.0-SNAPSHOT'
+ - Start plugin 'amazons3-plugin@1.0-SNAPSHOT'
+ - Start plugin 'mysql-plugin@1.0-SNAPSHOT'
+ - Start plugin 'dynamo-plugin@1.0-SNAPSHOT'
+ - Start plugin 'arangodb-plugin@1.0-SNAPSHOT'
+ - Start plugin 'restapi-plugin@1.0-SNAPSHOT'
+ - Start plugin 'redis-plugin@1.0-SNAPSHOT'
+ - Start plugin 'firestore-plugin@1.0-SNAPSHOT'
+ - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:508)
+	at com.mongodb.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:476)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:27017
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+ - Reflections took 122 ms to scan 1 urls, producing 2 keys and 6 values 
+ - Cluster description not yet available. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:23, serverValue:3}] to localhost:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=77078100, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000008, setVersion=1, topologyVersion=TopologyVersion{processId=62a44284b5b77842c1488878, counter=6}, lastWriteDate=Sat Jun 11 07:21:55 UTC 2022, lastUpdateTimeNanos=379187677900}
+ - Opened connection [connectionId{localValue:24, serverValue:4}] to localhost:27017
+ - Mongock trying to acquire the lock
+ - Opened connection [connectionId{localValue:25, serverValue:5}] to localhost:27017
+ - Opened connection [connectionId{localValue:26, serverValue:6}] to localhost:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=62951900, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000008, setVersion=1, topologyVersion=TopologyVersion{processId=62a44284b5b77842c1488878, counter=6}, lastWriteDate=Sat Jun 11 07:21:55 UTC 2022, lastUpdateTimeNanos=380122541300}
+ - Mongock acquired the lock until: Sat Jun 11 07:24:56 UTC 2022
+ - Mongock starting the data migration sequence id[2022-06-11T07:21:56.566103-482]...
+ - PASSED OVER - ChangeEntry{, "id"="initial-plugins", "author"="", "class"="DatabaseChangelog", "method"="initialPlugins"}
+ - PASSED OVER - ChangeEntry{, "id"="remove-org-name-index", "author"="", "class"="DatabaseChangelog", "method"="removeOrgNameIndex"}
+ - PASSED OVER - ChangeEntry{, "id"="initial-indexes", "author"="", "class"="DatabaseChangelog", "method"="addInitialIndexes"}
+ - PASSED OVER - ChangeEntry{, "id"="application-deleted-at", "author"="", "class"="DatabaseChangelog", "method"="addApplicationDeletedAtFieldAndIndex"}
+ - PASSED OVER - ChangeEntry{, "id"="hide-rapidapi-plugin", "author"="", "class"="DatabaseChangelog", "method"="hideRapidApiPluginFromCreateDatasource"}
+ - PASSED OVER - ChangeEntry{, "id"="datasource-deleted-at", "author"="", "class"="DatabaseChangelog", "method"="addDatasourceDeletedAtFieldAndIndex"}
+ - PASSED OVER - ChangeEntry{, "id"="page-deleted-at", "author"="", "class"="DatabaseChangelog", "method"="addPageDeletedAtFieldAndIndex"}
+ - PASSED OVER - ChangeEntry{, "id"="friendly-plugin-names", "author"="", "class"="DatabaseChangelog", "method"="setFriendlyPluginNames"}
+ - PASSED OVER - ChangeEntry{, "id"="add-delete-datasource-perm-existing-groups", "author"="", "class"="DatabaseChangelog", "method"="addDeleteDatasourcePermToExistingGroups"}
+ - PASSED OVER - ChangeEntry{, "id"="install-default-plugins-to-all-organizations", "author"="", "class"="DatabaseChangelog", "method"="installDefaultPluginsToAllOrganizations"}
+ - PASSED OVER - ChangeEntry{, "id"="ensure-datasource-created-and-updated-at-fields", "author"="", "class"="DatabaseChangelog", "method"="ensureDatasourceCreatedAndUpdatedAt"}
+ - PASSED OVER - ChangeEntry{, "id"="add-index-for-sequence-name", "author"="", "class"="DatabaseChangelog", "method"="addIndexForSequenceName"}
+ - PASSED OVER - ChangeEntry{, "id"="set-initial-sequence-for-datasource", "author"="", "class"="DatabaseChangelog", "method"="setInitialSequenceForDatasource"}
+ - PASSED OVER - ChangeEntry{, "id"="set-plugin-image-and-docs-link", "author"="", "class"="DatabaseChangelog", "method"="setPluginImageAndDocsLink"}
+ - PASSED OVER - ChangeEntry{, "id"="fix-double-escapes", "author"="", "class"="DatabaseChangelog", "method"="fixDoubleEscapes"}
+ - PASSED OVER - ChangeEntry{, "id"="encrypt-password", "author"="", "class"="DatabaseChangelog", "method"="encryptPassword"}
+ - PASSED OVER - ChangeEntry{, "id"="install-mysql-plugins", "author"="", "class"="DatabaseChangelog", "method"="mysqlPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="update-database-documentation-links", "author"="", "class"="DatabaseChangelog", "method"="updateDatabaseDocumentationLinks"}
+ - PASSED OVER - ChangeEntry{, "id"="execute-action-for-read-action", "author"="", "class"="DatabaseChangelog", "method"="giveExecutePermissionToReadActionUsers"}
+ - PASSED OVER - ChangeEntry{, "id"="invite-and-public-permissions", "author"="", "class"="DatabaseChangelog", "method"="giveInvitePermissionToOrganizationsAndPublicPermissionsToApplications"}
+ - PASSED OVER - ChangeEntry{, "id"="examples-organization", "author"="", "class"="DatabaseChangelog", "method"="examplesOrganization"}
+ - PASSED OVER - ChangeEntry{, "id"="set-example-apps-in-config", "author"="", "class"="DatabaseChangelog", "method"="setExampleAppsInConfig"}
+ - PASSED OVER - ChangeEntry{, "id"="update-erroneous-action-ids", "author"="", "class"="DatabaseChangelog", "method"="updateErroneousActionIdsInPage"}
+ - PASSED OVER - ChangeEntry{, "id"="generate-unique-id-for-instance", "author"="", "class"="DatabaseChangelog", "method"="generateUniqueIdForInstance"}
+ - PASSED OVER - ChangeEntry{, "id"="fix-password-reset-token-expiration", "author"="", "class"="DatabaseChangelog", "method"="fixTokenExpiration"}
+ - PASSED OVER - ChangeEntry{, "id"="add-elastic-search-plugin", "author"="", "class"="DatabaseChangelog", "method"="addElasticSearchPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="add-dynamo-plugin", "author"="", "class"="DatabaseChangelog", "method"="addDynamoPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="use-png-logos", "author"="", "class"="DatabaseChangelog", "method"="usePngLogos"}
+ - PASSED OVER - ChangeEntry{, "id"="add-redis-plugin", "author"="", "class"="DatabaseChangelog", "method"="addRedisPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="add-msSql-plugin", "author"="", "class"="DatabaseChangelog", "method"="addMsSqlPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="createNewPageIndexAfterDroppingNewPage", "author"="", "class"="DatabaseChangelog", "method"="addNewPageIndexAfterDroppingNewPage"}
+ - PASSED OVER - ChangeEntry{, "id"="createNewActionIndexAfterDroppingNewAction", "author"="", "class"="DatabaseChangelog", "method"="addNewActionIndexAfterDroppingNewAction"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-page-and-actions", "author"="", "class"="DatabaseChangelog", "method"="migratePage"}
+ - PASSED OVER - ChangeEntry{, "id"="new-page-new-action-add-indexes", "author"="", "class"="DatabaseChangelog", "method"="addNewPageAndNewActionNewIndexes"}
+ - PASSED OVER - ChangeEntry{, "id"="new-action-add-index-pageId", "author"="", "class"="DatabaseChangelog", "method"="addNewActionIndexForPageId"}
+ - PASSED OVER - ChangeEntry{, "id"="update-action-index-to-single-multiple-indices", "author"="", "class"="DatabaseChangelog", "method"="updateActionIndexToSingleMultipleIndices"}
+ - PASSED OVER - ChangeEntry{, "id"="add-firestore-plugin", "author"="", "class"="DatabaseChangelog", "method"="addFirestorePlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="ensure-app-icons-and-colors", "author"="", "class"="DatabaseChangelog", "method"="ensureAppIconsAndColors"}
+ - PASSED OVER - ChangeEntry{, "id"="update-authentication-type", "author"="", "class"="DatabaseChangelog", "method"="updateAuthenticationTypes"}
+ - PASSED OVER - ChangeEntry{, "id"="add-isSendSessionEnabled-key-for-datasources", "author"="", "class"="DatabaseChangelog", "method"="addIsSendSessionEnabledPropertyInDatasources"}
+ - PASSED OVER - ChangeEntry{, "id"="add-redshift-plugin", "author"="", "class"="DatabaseChangelog", "method"="addRedshiftPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="clear-userdata-collection", "author"="", "class"="DatabaseChangelog", "method"="clearUserDataCollection"}
+ - PASSED OVER - ChangeEntry{, "id"="update-database-documentation-links-v1-2-1", "author"="", "class"="DatabaseChangelog", "method"="updateDatabaseDocumentationLinks_v1_2_1"}
+ - PASSED OVER - ChangeEntry{, "id"="add-amazons3-plugin", "author"="", "class"="DatabaseChangelog", "method"="addAmazonS3Plugin"}
+ - PASSED OVER - ChangeEntry{, "id"="add-app-viewer-invite-policy", "author"="", "class"="DatabaseChangelog", "method"="addAppViewerInvitePolicy"}
+ - PASSED OVER - ChangeEntry{, "id"="update-plugin-datasource-form-components", "author"="", "class"="DatabaseChangelog", "method"="updatePluginDatasourceFormComponents"}
+ - PASSED OVER - ChangeEntry{, "id"="update-database-encode-params-toggle", "author"="", "class"="DatabaseChangelog", "method"="updateEncodeParamsToggle"}
+ - PASSED OVER - ChangeEntry{, "id"="update-postgres-plugin-preparedStatement-config", "author"="", "class"="DatabaseChangelog", "method"="updatePostgresActionsSetPreparedStatementConfiguration"}
+ - PASSED OVER - ChangeEntry{, "id"="fix-dynamicBindingPathListForActions", "author"="", "class"="DatabaseChangelog", "method"="fixDynamicBindingPathListForExistingActions"}
+ - PASSED OVER - ChangeEntry{, "id"="update-database-action-configuration-timeout", "author"="", "class"="DatabaseChangelog", "method"="updateActionConfigurationTimeout"}
+ - PASSED OVER - ChangeEntry{, "id"="update-s3-datasource-configuration-and-label", "author"="", "class"="DatabaseChangelog", "method"="updateS3DatasourceConfigurationAndLabel"}
+ - PASSED OVER - ChangeEntry{, "id"="change-applayout-type-definition", "author"="", "class"="DatabaseChangelog", "method"="changeAppLayoutTypeDefinition"}
+ - PASSED OVER - ChangeEntry{, "id"="clear-example-apps", "author"="", "class"="DatabaseChangelog", "method"="clearExampleApps"}
+ - PASSED OVER - ChangeEntry{, "id"="update-mysql-postgres-mongo-ssl-mode", "author"="", "class"="DatabaseChangelog", "method"="updateMysqlPostgresMongoSslMode"}
+ - PASSED OVER - ChangeEntry{, "id"="add-commenting-permissions", "author"="", "class"="DatabaseChangelog", "method"="addCommentingPermissions"}
+ - PASSED OVER - ChangeEntry{, "id"="add-google-sheets-plugin", "author"="", "class"="DatabaseChangelog", "method"="addGoogleSheetsPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="mark-instance-unregistered", "author"="", "class"="DatabaseChangelog", "method"="markInstanceAsUnregistered"}
+ - PASSED OVER - ChangeEntry{, "id"="create-entry-in-sequence-per-organization-for-datasource", "author"="", "class"="DatabaseChangelog", "method"="createEntryInSequencePerOrganizationForDatasource"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-smartSubstitution-dataType", "author"="", "class"="DatabaseChangelog", "method"="migrateSmartSubstitutionDataTypeBoolean"}
+ - PASSED OVER - ChangeEntry{, "id"="update-mongo-import-from-srv-field", "author"="", "class"="DatabaseChangelog", "method"="updateMongoImportFromSrvField"}
+ - PASSED OVER - ChangeEntry{, "id"="delete-mongo-datasource-structures", "author"="", "class"="DatabaseChangelog", "method"="deleteMongoDatasourceStructures"}
+ - PASSED OVER - ChangeEntry{, "id"="set-mongo-actions-type-to-raw", "author"="", "class"="DatabaseChangelog", "method"="setMongoActionInputToRaw"}
+ - PASSED OVER - ChangeEntry{, "id"="update-firestore-where-conditions-data", "author"="", "class"="DatabaseChangelog", "method"="updateFirestoreWhereConditionsData"}
+ - PASSED OVER - ChangeEntry{, "id"="add-application-export-permissions", "author"="", "class"="DatabaseChangelog", "method"="addApplicationExportPermissions"}
+ - PASSED OVER - ChangeEntry{, "id"="add-snowflake-plugin", "author"="", "class"="DatabaseChangelog", "method"="addSnowflakePlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="mongo-form-merge-update-commands", "author"="", "class"="DatabaseChangelog", "method"="migrateUpdateOneToUpdateManyMongoFormCommand"}
+ - PASSED OVER - ChangeEntry{, "id"="ensure-user-created-and-updated-at-fields", "author"="", "class"="DatabaseChangelog", "method"="ensureUserCreatedAndUpdatedAt"}
+ - PASSED OVER - ChangeEntry{, "id"="add-and-update-order-for-all-pages", "author"="", "class"="DatabaseChangelog", "method"="addOrderToAllPagesOfApplication"}
+ - PASSED OVER - ChangeEntry{, "id"="mongo-form-migrate-raw", "author"="", "class"="DatabaseChangelog", "method"="migrateRawInputTypeToRawCommand"}
+ - PASSED OVER - ChangeEntry{, "id"="add-arangodb-plugin", "author"="", "class"="DatabaseChangelog", "method"="addArangoDBPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="set-svg-logo-to-plugins", "author"="", "class"="DatabaseChangelog", "method"="setSvgLogoToPluginIcons"}
+ - PASSED OVER - ChangeEntry{, "id"="remove-order-field-from-application- pages", "author"="", "class"="DatabaseChangelog", "method"="removePageOrderFieldFromApplicationPages"}
+ - PASSED OVER - ChangeEntry{, "id"="create-plugin-reference-for-genarate-CRUD-page", "author"="", "class"="DatabaseChangelog", "method"="createPluginReferenceForGenerateCRUDPage"}
+ - Opened connection [connectionId{localValue:27, serverValue:7}] to localhost:27017
+ - PASSED OVER - ChangeEntry{, "id"="encrypt-certificate", "author"="", "class"="DatabaseChangelog", "method"="encryptCertificateAndPassword"}
+ - PASSED OVER - ChangeEntry{, "id"="create-plugin-reference-for-S3-GSheet-genarate-CRUD-page", "author"="", "class"="DatabaseChangelog", "method"="createPluginReferenceForS3AndGSheetGenerateCRUDPage"}
+ - PASSED OVER - ChangeEntry{, "id"="application-git-metadata", "author"="", "class"="DatabaseChangelog", "method"="addApplicationGitMetadataFieldAndIndex"}
+ - PASSED OVER - ChangeEntry{, "id"="add-js-plugin", "author"="", "class"="DatabaseChangelog", "method"="addJSPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="update-google-sheet-plugin-smartSubstitution-config", "author"="", "class"="DatabaseChangelog", "method"="updateGoogleSheetActionsSetSmartSubstitutionConfiguration"}
+ - PASSED OVER - ChangeEntry{, "id"="uninstall-mongo-uqi-plugin", "author"="", "class"="DatabaseChangelog", "method"="uninstallMongoUqiPluginAndRemoveAllActions"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-mongo-to-uqi", "author"="", "class"="DatabaseChangelog", "method"="migrateMongoPluginToUqi"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-mongo-uqi-dynamicBindingPathList", "author"="", "class"="DatabaseChangelog", "method"="migrateMongoPluginDynamicBindingListUqi"}
+ - PASSED OVER - ChangeEntry{, "id"="update-plugin-package-name-index", "author"="", "class"="DatabaseChangelog", "method"="updatePluginPackageNameIndexToPluginNamePackageNameAndVersion"}
+ - PASSED OVER - ChangeEntry{, "id"="delete-orphan-actions", "author"="", "class"="DatabaseChangelog", "method"="deleteOrphanActions"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-old-app-color-to-new-colors", "author"="", "class"="DatabaseChangelog", "method"="migrateOldAppColorsToNewColors"}
+ - PASSED OVER - ChangeEntry{, "id"="update-s3-permanent-url-toggle-default-value", "author"="", "class"="DatabaseChangelog", "method"="updateS3PermanentUrlToggleDefaultValue"}
+ - PASSED OVER - ChangeEntry{, "id"="application-git-metadata-index", "author"="", "class"="DatabaseChangelog", "method"="updateGitApplicationMetadataIndex"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-s3-to-uqi", "author"="", "class"="DatabaseChangelog", "method"="migrateS3PluginToUqi"}
+ - PASSED OVER - ChangeEntry{, "id"="set-slug-to-application-and-page", "author"="", "class"="DatabaseChangelog", "method"="setSlugToApplicationAndPage"}
+ - PASSED OVER - ChangeEntry{, "id"="update-list-widget-trigger-paths", "author"="", "class"="DatabaseChangelog", "method"="removeUnusedTriggerPathsListWidget"}
+ - PASSED OVER - ChangeEntry{, "id"="update-s3-action-configuration-for-type", "author"="", "class"="DatabaseChangelog", "method"="updateS3ActionConfigurationBodyForContentTypeSupport"}
+ - PASSED OVER - ChangeEntry{, "id"="fix-ispublic-is-false-for-public-apps", "author"="", "class"="DatabaseChangelog", "method"="fixIsPublicIsSetFalseWhenAppIsPublic"}
+ - PASSED OVER - ChangeEntry{, "id"="update-js-action-client-side-execution", "author"="", "class"="DatabaseChangelog", "method"="updateJsActionsClientSideExecution"}
+ - PASSED OVER - ChangeEntry{, "id"="add-smtp-plugin", "author"="", "class"="DatabaseChangelog", "method"="addSmtpPluginPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="update-mockdb-endpoint", "author"="", "class"="DatabaseChangelog", "method"="updateMockdbEndpoint"}
+ - PASSED OVER - ChangeEntry{, "id"="add-google-sheets-plugin-name", "author"="", "class"="DatabaseChangelog", "method"="addPluginNameForGoogleSheets"}
+ - PASSED OVER - ChangeEntry{, "id"="insert-default-resources", "author"="", "class"="DatabaseChangelog", "method"="insertDefaultResources"}
+ - PASSED OVER - ChangeEntry{, "id"="flush-spring-redis-keys", "author"="", "class"="DatabaseChangelog", "method"="clearRedisCache"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-firestore-to-uqi", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePluginToUqi"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-firestore-to-uqi-2", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePluginToUqi2"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-firestore-pagination-data", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePaginationData"}
+ - PASSED OVER - ChangeEntry{, "id"="update-mongodb-mockdb-endpoint", "author"="", "class"="DatabaseChangelog", "method"="updateMongoMockdbEndpoint"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-firestore-to-uqi-3", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePluginToUqi3"}
+ - PASSED OVER - ChangeEntry{, "id"="create-system-themes", "author"="", "class"="DatabaseChangelog", "method"="createSystemThemes"}
+ - PASSED OVER - ChangeEntry{, "id"="add-limit-field-data-to-mongo-aggregate-cmd", "author"="", "class"="DatabaseChangelog", "method"="addLimitFieldDataToMongoAggregateCommand"}
+ - PASSED OVER - ChangeEntry{, "id"="update-index-for-git", "author"="", "class"="DatabaseChangelog", "method"="updateGitIndexes"}
+ - PASSED OVER - ChangeEntry{, "id"="update-mockdb-endpoint-2", "author"="", "class"="DatabaseChangelog", "method"="updateMockdbEndpoint2"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-from-RSA-SHA1-to-ECDSA-SHA2-protocol-for-key-generation", "author"="", "class"="DatabaseChangelog", "method"="migrateFromRSASha1ToECDSASha2Protocol"}
+ - PASSED OVER - ChangeEntry{, "id"="use-assets-cdn-for-plugin-icons", "author"="", "class"="DatabaseChangelog", "method"="useAssetsCDNForPluginIcons"}
+ - PASSED OVER - ChangeEntry{, "id"="update-index-for-newAction-actionCollection-userData", "author"="", "class"="DatabaseChangelog", "method"="updateNewActionActionCollectionAndUserDataIndexes"}
+ - PASSED OVER - ChangeEntry{, "id"="mark-mssql-crud-unavailable", "author"="", "class"="DatabaseChangelog", "method"="markMSSQLCrudUnavailable"}
+ - PASSED OVER - ChangeEntry{, "id"="update-index-for-newAction-actionCollection", "author"="", "class"="DatabaseChangelog", "method"="updateNewActionActionCollectionIndexes"}
+ - method[createSystemThemes2] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - RE-APPLIED - ChangeEntry{, "id"="create-system-themes-v2", "author"="", "class"="DatabaseChangelog", "method"="createSystemThemes2"}
+ - PASSED OVER - ChangeEntry{, "id"="set-firestore-smart-substitution-to-false-for-old-cmds", "author"="", "class"="DatabaseChangelog", "method"="setFirestoreSmartSubstitutionToFalseForOldCommands"}
+ - PASSED OVER - ChangeEntry{, "id"="fix-plugin-title-casing", "author"="", "class"="DatabaseChangelog2", "method"="fixPluginTitleCasing"}
+ - PASSED OVER - ChangeEntry{, "id"="deprecate-archivedAt-in-action", "author"="", "class"="DatabaseChangelog2", "method"="deprecateArchivedAtForNewAction"}
+ - PASSED OVER - ChangeEntry{, "id"="update-form-data-for-uqi-mode", "author"="", "class"="DatabaseChangelog2", "method"="updateActionFormDataPath"}
+ - PASSED OVER - ChangeEntry{, "id"="add-isConfigured-flag-for-all-datasources", "author"="", "class"="DatabaseChangelog2", "method"="updateIsConfiguredFlagForAllTheExistingDatasources"}
+ - PASSED OVER - ChangeEntry{, "id"="set-application-version", "author"="", "class"="DatabaseChangelog2", "method"="setDefaultApplicationVersion"}
+ - PASSED OVER - ChangeEntry{, "id"="delete-orphan-pages", "author"="", "class"="DatabaseChangelog2", "method"="deleteOrphanPages"}
+ - PASSED OVER - ChangeEntry{, "id"="update-git-indexes", "author"="", "class"="DatabaseChangelog2", "method"="addIndexesForGit"}
+ - PASSED OVER - ChangeEntry{, "id"="update-organization-slugs", "author"="", "class"="DatabaseChangelog2", "method"="updateOrganizationSlugs"}
+ - PASSED OVER - ChangeEntry{, "id"="copy-organization-to-workspaces", "author"="", "class"="DatabaseChangelog2", "method"="copyOrganizationToWorkspaces"}
+ - PASSED OVER - ChangeEntry{, "id"="add-workspace-indexes", "author"="", "class"="DatabaseChangelog2", "method"="addWorkspaceIndexes"}
+ - PASSED OVER - ChangeEntry{, "id"="update-sequence-names-from-organization-to-workspace", "author"="", "class"="DatabaseChangelog2", "method"="updateSequenceNamesFromOrganizationToWorkspace"}
+ - PASSED OVER - ChangeEntry{, "id"="add-default-tenant", "author"="", "class"="DatabaseChangelog2", "method"="addDefaultTenant"}
+ - PASSED OVER - ChangeEntry{, "id"="add-tenant-to-all-workspaces", "author"="", "class"="DatabaseChangelog2", "method"="addTenantToWorkspaces"}
+ - PASSED OVER - ChangeEntry{, "id"="add-tenant-to-all-users-and-flush-redis", "author"="", "class"="DatabaseChangelog2", "method"="addTenantToUsersAndFlushRedis"}
+ - Mongock releasing the lock
+ - Mongock released the lock
+ - Mongock has finished
+ - Exposing 1 endpoint(s) beneath base path '/actuator'
+ - Netty started on port 8080
+ - Started ServerApplication in 36.18 seconds (JVM running for 37.634)
+ - Triggering registration of this instance...
+ - Opened connection [connectionId{localValue:28, serverValue:14}] to localhost:27017
+
+ █████╗ ██████╗ ██████╗ ███████╗███╗   ███╗██╗████████╗██╗  ██╗    ██╗███████╗    ██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗██╗███╗   ██╗ ██████╗ ██╗
+██╔══██╗██╔══██╗██╔══██╗██╔════╝████╗ ████║██║╚══██╔══╝██║  ██║    ██║██╔════╝    ██╔══██╗██║   ██║████╗  ██║████╗  ██║██║████╗  ██║██╔════╝ ██║
+███████║██████╔╝██████╔╝███████╗██╔████╔██║██║   ██║   ███████║    ██║███████╗    ██████╔╝██║   ██║██╔██╗ ██║██╔██╗ ██║██║██╔██╗ ██║██║  ███╗██║
+██╔══██║██╔═══╝ ██╔═══╝ ╚════██║██║╚██╔╝██║██║   ██║   ██╔══██║    ██║╚════██║    ██╔══██╗██║   ██║██║╚██╗██║██║╚██╗██║██║██║╚██╗██║██║   ██║╚═╝
+██║  ██║██║     ██║     ███████║██║ ╚═╝ ██║██║   ██║   ██║  ██║    ██║███████║    ██║  ██║╚██████╔╝██║ ╚████║██║ ╚████║██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝     ╚═╝╚═╝   ╚═╝   ╚═╝  ╚═╝    ╚═╝╚══════╝    ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+
+Please open http://localhost:<port> in your browser to experience Appsmith!
+
+ - Opened connection [connectionId{localValue:29, serverValue:15}] to localhost:27017
+ - Login succeeded for user: User(name=baobaoack000, email=baobaoack115@gmail.com, roles=null, password=$2a$10$6ulfaKsFx0WRPLX8zWNHGegwFlwhyX16dLO3PMV3BLSAmfXG9AZLK, passwordResetInitiated=false, source=FORM, state=ACTIVATED, isEnabled=true, currentOrganizationId=62a068f6b242ac0314bbdb21, organizationIds=[62a068f6b242ac0314bbdb21], examplesOrganizationId=null, groupIds=[], permissions=[], inviteToken=null, isAnonymous=false, tenantId=62a068dcb242ac0314bbdb1c)
+userEmail=baobaoack115@gmail.com, sessionId=35ba743f-1a17-47a7-a543-85677ffd97bd, thread=lettuce-epollEventLoop-6-1, requestId=14c82124-aafd-4e6b-90df-35102de8de60 - Checking if feature LINTING is active for user baobaoack115@gmail.com
+userEmail=baobaoack115@gmail.com, sessionId=35ba743f-1a17-47a7-a543-85677ffd97bd, thread=lettuce-epollEventLoop-6-1, requestId=14c82124-aafd-4e6b-90df-35102de8de60 - Checking if feature MULTIPLAYER is active for user baobaoack115@gmail.com
+userEmail=baobaoack115@gmail.com, sessionId=35ba743f-1a17-47a7-a543-85677ffd97bd, thread=lettuce-epollEventLoop-6-1, requestId=d04c2c37-cac4-4ecb-94c1-7bd21d1eb1fe - Going to get all applications grouped by workspace
+userEmail=baobaoack115@gmail.com, sessionId=35ba743f-1a17-47a7-a543-85677ffd97bd, thread=lettuce-epollEventLoop-6-1, requestId=a73204b6-a23b-4f5d-bce2-eb31fe168281 - Going to get all resources from base controller {}
+ - Opened connection [connectionId{localValue:30, serverValue:16}] to localhost:27017
+ - Opened connection [connectionId{localValue:31, serverValue:17}] to localhost:27017
+userEmail=baobaoack115@gmail.com, sessionId=35ba743f-1a17-47a7-a543-85677ffd97bd, thread=lettuce-epollEventLoop-6-1, requestId=66e663f2-ad86-4ff1-a272-89c028818d43 - Going to get all unpublished action collections with params: {applicationId=[62a068f6b242ac0314bbdb22]}, branch: null
+userEmail=baobaoack115@gmail.com, sessionId=35ba743f-1a17-47a7-a543-85677ffd97bd, thread=lettuce-epollEventLoop-6-1, requestId=795881d7-57b3-4b6d-b63a-ec111e513561 - Going to get all actions with params: {applicationId=[62a068f6b242ac0314bbdb22]}, branch: null
+userEmail=baobaoack115@gmail.com, sessionId=35ba743f-1a17-47a7-a543-85677ffd97bd, thread=lettuce-epollEventLoop-6-1, requestId=798eb709-1ec6-4e2e-b373-75ecc2db41cf - Going to get all resources from base controller {organizationId=[62a068f6b242ac0314bbdb21]}
+ - Fetching plugins by params: {organizationId=[62a068f6b242ac0314bbdb21]} for org: baobaoack000's apps
+ - Error loading templates metadata in plugin restapi-plugin
+ - Error loading templates metadata in plugin rapidapi-plugin
+ - Error loading templates metadata in plugin elasticsearch-plugin
+ - Error loading templates metadata in plugin dynamo-plugin
+ - Error loading templates metadata in plugin redis-plugin
+userEmail=baobaoack115@gmail.com, sessionId=35ba743f-1a17-47a7-a543-85677ffd97bd, thread=lettuce-epollEventLoop-6-1, requestId=1c40ea2a-6457-4642-9379-13728be1c33a - Going to get all resources from base controller {organizationId=[62a068f6b242ac0314bbdb21]}
+ - Error loading templates metadata in plugin firestore-plugin
+ - Error loading templates metadata in plugin redshift-plugin
+ - Error loading templates metadata in plugin amazons3-plugin
+ - Error loading templates metadata in plugin google-sheets-plugin
+ - Error loading templates metadata in plugin js-plugin
+ - Error loading templates metadata in plugin smtp-plugin
+ - Error loading templates metadata in plugin saas-plugin
+userEmail=baobaoack115@gmail.com, sessionId=35ba743f-1a17-47a7-a543-85677ffd97bd, thread=lettuce-epollEventLoop-6-1, requestId=573affbe-e735-4ee3-b8d3-96aabc0425bd - Going to get resource from base controller for id: 62a068f6b242ac0314bbdb21
+userEmail=baobaoack115@gmail.com, sessionId=35ba743f-1a17-47a7-a543-85677ffd97bd, thread=lettuce-epollEventLoop-6-1, requestId=63823db3-23cf-4ee0-b50a-025e45b19452 - javax.persistence.spi::No valid providers found.
+userEmail=baobaoack115@gmail.com, sessionId=35ba743f-1a17-47a7-a543-85677ffd97bd, thread=lettuce-epollEventLoop-6-1, requestId=9db9eb9b-00e1-404a-9b84-6388b0f4fcbd - Going to get all applications grouped by workspace
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Operator called default onErrorDropped
+com.appsmith.external.exceptions.pluginExceptions.AppsmithPluginException: Unable to look up TXT record for host localhost
+	at com.external.plugins.MongoPlugin$MongoPluginExecutor.lambda$datasourceCreate$10(MongoPlugin.java:619)
+	at reactor.core.publisher.Mono.lambda$onErrorMap$31(Mono.java:3733)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+	at reactor.core.publisher.Operators.error(Operators.java:198)
+	at reactor.core.publisher.MonoError.subscribe(MonoError.java:53)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4400)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onError(FluxMapFuseable.java:140)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:119)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2398)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:169)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2194)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onSubscribe(FluxOnErrorResume.java:74)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)
+	at reactor.core.publisher.FluxFlatMap.trySubscribeScalarMap(FluxFlatMap.java:192)
+	at reactor.core.publisher.MonoFlatMap.subscribeOrReturn(MonoFlatMap.java:53)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4385)
+	at reactor.core.publisher.MonoSubscribeOn$SubscribeOnSubscriber.run(MonoSubscribeOn.java:126)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:84)
+	at reactor.core.scheduler.WorkerTask.call(WorkerTask.java:37)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$2632/0x0000000840d77440@b0bc5cb from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:32, serverValue:18}] to 127.0.0.1:27017
+ - Opened connection [connectionId{localValue:33, serverValue:19}] to 127.0.0.1:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16578200, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000008, setVersion=1, topologyVersion=TopologyVersion{processId=62a44284b5b77842c1488878, counter=6}, lastWriteDate=Sat Jun 11 07:30:15 UTC 2022, lastUpdateTimeNanos=883936252000}
+ - Closed connection [connectionId{localValue:35}] to 127.0.0.1:27017 because there was a socket exception raised by this connection.
+ - Closed connection [connectionId{localValue:34}] to 127.0.0.1:27017 because there was a socket exception raised by this connection.
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$2632/0x0000000840d77440@33a08cd from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:36, serverValue:22}] to 127.0.0.1:27017
+ - Opened connection [connectionId{localValue:37, serverValue:23}] to 127.0.0.1:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5826000, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000008, setVersion=1, topologyVersion=TopologyVersion{processId=62a44284b5b77842c1488878, counter=6}, lastWriteDate=Sat Jun 11 07:30:45 UTC 2022, lastUpdateTimeNanos=912310457400}
+ - Closed connection [connectionId{localValue:39}] to 127.0.0.1:27017 because there was a socket exception raised by this connection.
+ - Closed connection [connectionId{localValue:38}] to 127.0.0.1:27017 because there was a socket exception raised by this connection.
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$2632/0x0000000840d77440@118024f2 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:41, serverValue:27}] to 127.0.0.1:27017
+ - Opened connection [connectionId{localValue:40, serverValue:26}] to 127.0.0.1:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2966400, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000008, setVersion=1, topologyVersion=TopologyVersion{processId=62a44284b5b77842c1488878, counter=6}, lastWriteDate=Sat Jun 11 07:30:55 UTC 2022, lastUpdateTimeNanos=923216350400}
+ - Closed connection [connectionId{localValue:43}] to 127.0.0.1:27017 because there was a socket exception raised by this connection.
+ - Closed connection [connectionId{localValue:42}] to 127.0.0.1:27017 because there was a socket exception raised by this connection.
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$2632/0x0000000840d77440@44708e94 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:44, serverValue:30}] to 127.0.0.1:27017
+ - Opened connection [connectionId{localValue:45, serverValue:31}] to 127.0.0.1:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2043300, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000008, setVersion=1, topologyVersion=TopologyVersion{processId=62a44284b5b77842c1488878, counter=6}, lastWriteDate=Sat Jun 11 07:31:25 UTC 2022, lastUpdateTimeNanos=954698847500}
+ - Closed connection [connectionId{localValue:47}] to 127.0.0.1:27017 because there was a socket exception raised by this connection.
+ - Closed connection [connectionId{localValue:46}] to 127.0.0.1:27017 because there was a socket exception raised by this connection.
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[localhost:49153], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$2632/0x0000000840d77440@7fbb99f4 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:49153, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Exception in monitor thread while connecting to server localhost:49153
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.AsynchronousSocketChannelStream$OpenCompletionHandler.failed(AsynchronousSocketChannelStream.java:124)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:283)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:198)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:213)
+	at java.base/sun.nio.ch.EPollPort$EventHandlerTask.run(EPollPort.java:306)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:252)
+	... 7 common frames omitted
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[localhost:49153], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$2632/0x0000000840d77440@10429fec from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:49153, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Exception in monitor thread while connecting to server localhost:49153
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.AsynchronousSocketChannelStream$OpenCompletionHandler.failed(AsynchronousSocketChannelStream.java:124)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:283)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:198)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:213)
+	at java.base/sun.nio.ch.EPollPort$EventHandlerTask.run(EPollPort.java:306)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:252)
+	... 7 common frames omitted
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[localhost:49153], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$2632/0x0000000840d77440@1e856394 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:49153, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Exception in monitor thread while connecting to server localhost:49153
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.AsynchronousSocketChannelStream$OpenCompletionHandler.failed(AsynchronousSocketChannelStream.java:124)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.Invoker$2.run(Invoker.java:219)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:252)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:198)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:213)
+	at java.base/sun.nio.ch.EPollPort$EventHandlerTask.run(EPollPort.java:306)
+	... 1 common frames omitted
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[0.0.0.0:49153], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$2632/0x0000000840d77440@8d23ab7 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=0.0.0.0:49153, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Exception in monitor thread while connecting to server 0.0.0.0:49153
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.AsynchronousSocketChannelStream$OpenCompletionHandler.failed(AsynchronousSocketChannelStream.java:124)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:129)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:283)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.finish(UnixAsynchronousSocketChannelImpl.java:198)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.onEvent(UnixAsynchronousSocketChannelImpl.java:213)
+	at java.base/sun.nio.ch.EPollPort$EventHandlerTask.run(EPollPort.java:306)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.UnixAsynchronousSocketChannelImpl.finishConnect(UnixAsynchronousSocketChannelImpl.java:252)
+	... 7 common frames omitted
+Load environment configuration
+/opt/appsmith/run-java.sh: line 22: isset: command not found
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/appsmith/backend/server.jar!/BOOT-INF/lib/logback-classic-1.2.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/appsmith/backend/server.jar!/BOOT-INF/lib/slf4j-log4j12-1.7.33.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+ - Starting ServerApplication vv1.7.1 using Java 11.0.15 on 4c4d4247c300 with PID 1381 (/opt/appsmith/backend/server.jar started by root in /opt/appsmith/backend)
+ - Running with Spring Boot v2.5.9, Spring v5.3.15
+ - No active profile set, falling back to default profiles: default
+ - Multiple Spring Data modules found, entering strict repository configuration mode!
+ - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+ - Finished Spring Data repository scanning in 565 ms. Found 55 Reactive MongoDB repository interfaces.
+ - Multiple Spring Data modules found, entering strict repository configuration mode!
+ - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ActionCollectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.TenantRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.AssetRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.NotificationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ProviderRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.CollectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.UsagePulseRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.LayoutRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.CommentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ConfigRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PermissionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PluginRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PageRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.PasswordResetTokenRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.UsagePulseRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.DatasourceRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.UserDataRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ThemeRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.UserRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.CollectionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ActionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ProviderRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.TenantRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ActionCollectionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ApiTemplateRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.InviteUserRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.NewActionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.NotificationRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.CommentRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.CommentThreadRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PageRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ApplicationRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.NewPageRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.LayoutRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.GroupRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PluginRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.ConfigRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.WorkspaceRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PasswordResetTokenRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.PermissionRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ce.AssetRepositoryCE. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.CommentThreadRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ApplicationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ApiTemplateRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.DatasourceRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.InviteUserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.NewActionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.UserDataRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.GroupRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ThemeRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.NewPageRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.ActionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.WorkspaceRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsmith.server.repositories.GitDeployKeysRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+ - Finished Spring Data repository scanning in 123 ms. Found 0 Redis repository interfaces.
+ - Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:508)
+	at com.mongodb.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:476)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:27017
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+ - Enabled plugins: []
+ - Disabled plugins: []
+ - PF4J version 3.5.0 in 'deployment' mode
+ - Plugin 'rapidapi-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'postgres-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'saas-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'snowflake-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'elasticsearch-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'mssql-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'redshift-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'mongo-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'google-sheets-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'js-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'smtp-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'amazons3-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'mysql-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'dynamo-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'arangodb-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'restapi-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'redis-plugin@1.0-SNAPSHOT' resolved
+ - Plugin 'firestore-plugin@1.0-SNAPSHOT' resolved
+ - Start plugin 'rapidapi-plugin@1.0-SNAPSHOT'
+ - Start plugin 'postgres-plugin@1.0-SNAPSHOT'
+ - Start plugin 'saas-plugin@1.0-SNAPSHOT'
+ - Start plugin 'snowflake-plugin@1.0-SNAPSHOT'
+ - Start plugin 'elasticsearch-plugin@1.0-SNAPSHOT'
+ - Start plugin 'mssql-plugin@1.0-SNAPSHOT'
+ - Start plugin 'redshift-plugin@1.0-SNAPSHOT'
+ - Start plugin 'mongo-plugin@1.0-SNAPSHOT'
+ - Start plugin 'google-sheets-plugin@1.0-SNAPSHOT'
+ - Start plugin 'js-plugin@1.0-SNAPSHOT'
+ - Start plugin 'smtp-plugin@1.0-SNAPSHOT'
+ - Start plugin 'amazons3-plugin@1.0-SNAPSHOT'
+ - Start plugin 'mysql-plugin@1.0-SNAPSHOT'
+ - Start plugin 'dynamo-plugin@1.0-SNAPSHOT'
+ - Start plugin 'arangodb-plugin@1.0-SNAPSHOT'
+ - Start plugin 'restapi-plugin@1.0-SNAPSHOT'
+ - Start plugin 'redis-plugin@1.0-SNAPSHOT'
+ - Start plugin 'firestore-plugin@1.0-SNAPSHOT'
+ - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:508)
+	at com.mongodb.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:476)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:27017
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:710)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+ - Reflections took 98 ms to scan 1 urls, producing 2 keys and 6 values 
+ - Cluster description not yet available. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:11, serverValue:3}] to localhost:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=76623100, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000009, setVersion=1, topologyVersion=TopologyVersion{processId=62a44e2478e45476b2d81136, counter=6}, lastWriteDate=Sat Jun 11 08:11:28 UTC 2022, lastUpdateTimeNanos=3352403969300}
+ - Opened connection [connectionId{localValue:12, serverValue:4}] to localhost:27017
+ - Mongock trying to acquire the lock
+ - Mongock acquired the lock until: Sat Jun 11 08:14:29 UTC 2022
+ - Mongock starting the data migration sequence id[2022-06-11T08:11:29.619271-522]...
+ - PASSED OVER - ChangeEntry{, "id"="initial-plugins", "author"="", "class"="DatabaseChangelog", "method"="initialPlugins"}
+ - PASSED OVER - ChangeEntry{, "id"="remove-org-name-index", "author"="", "class"="DatabaseChangelog", "method"="removeOrgNameIndex"}
+ - PASSED OVER - ChangeEntry{, "id"="initial-indexes", "author"="", "class"="DatabaseChangelog", "method"="addInitialIndexes"}
+ - PASSED OVER - ChangeEntry{, "id"="application-deleted-at", "author"="", "class"="DatabaseChangelog", "method"="addApplicationDeletedAtFieldAndIndex"}
+ - PASSED OVER - ChangeEntry{, "id"="hide-rapidapi-plugin", "author"="", "class"="DatabaseChangelog", "method"="hideRapidApiPluginFromCreateDatasource"}
+ - PASSED OVER - ChangeEntry{, "id"="datasource-deleted-at", "author"="", "class"="DatabaseChangelog", "method"="addDatasourceDeletedAtFieldAndIndex"}
+ - PASSED OVER - ChangeEntry{, "id"="page-deleted-at", "author"="", "class"="DatabaseChangelog", "method"="addPageDeletedAtFieldAndIndex"}
+ - PASSED OVER - ChangeEntry{, "id"="friendly-plugin-names", "author"="", "class"="DatabaseChangelog", "method"="setFriendlyPluginNames"}
+ - PASSED OVER - ChangeEntry{, "id"="add-delete-datasource-perm-existing-groups", "author"="", "class"="DatabaseChangelog", "method"="addDeleteDatasourcePermToExistingGroups"}
+ - PASSED OVER - ChangeEntry{, "id"="install-default-plugins-to-all-organizations", "author"="", "class"="DatabaseChangelog", "method"="installDefaultPluginsToAllOrganizations"}
+ - PASSED OVER - ChangeEntry{, "id"="ensure-datasource-created-and-updated-at-fields", "author"="", "class"="DatabaseChangelog", "method"="ensureDatasourceCreatedAndUpdatedAt"}
+ - PASSED OVER - ChangeEntry{, "id"="add-index-for-sequence-name", "author"="", "class"="DatabaseChangelog", "method"="addIndexForSequenceName"}
+ - PASSED OVER - ChangeEntry{, "id"="set-initial-sequence-for-datasource", "author"="", "class"="DatabaseChangelog", "method"="setInitialSequenceForDatasource"}
+ - PASSED OVER - ChangeEntry{, "id"="set-plugin-image-and-docs-link", "author"="", "class"="DatabaseChangelog", "method"="setPluginImageAndDocsLink"}
+ - PASSED OVER - ChangeEntry{, "id"="fix-double-escapes", "author"="", "class"="DatabaseChangelog", "method"="fixDoubleEscapes"}
+ - PASSED OVER - ChangeEntry{, "id"="encrypt-password", "author"="", "class"="DatabaseChangelog", "method"="encryptPassword"}
+ - PASSED OVER - ChangeEntry{, "id"="install-mysql-plugins", "author"="", "class"="DatabaseChangelog", "method"="mysqlPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="update-database-documentation-links", "author"="", "class"="DatabaseChangelog", "method"="updateDatabaseDocumentationLinks"}
+ - PASSED OVER - ChangeEntry{, "id"="execute-action-for-read-action", "author"="", "class"="DatabaseChangelog", "method"="giveExecutePermissionToReadActionUsers"}
+ - PASSED OVER - ChangeEntry{, "id"="invite-and-public-permissions", "author"="", "class"="DatabaseChangelog", "method"="giveInvitePermissionToOrganizationsAndPublicPermissionsToApplications"}
+ - PASSED OVER - ChangeEntry{, "id"="examples-organization", "author"="", "class"="DatabaseChangelog", "method"="examplesOrganization"}
+ - PASSED OVER - ChangeEntry{, "id"="set-example-apps-in-config", "author"="", "class"="DatabaseChangelog", "method"="setExampleAppsInConfig"}
+ - PASSED OVER - ChangeEntry{, "id"="update-erroneous-action-ids", "author"="", "class"="DatabaseChangelog", "method"="updateErroneousActionIdsInPage"}
+ - PASSED OVER - ChangeEntry{, "id"="generate-unique-id-for-instance", "author"="", "class"="DatabaseChangelog", "method"="generateUniqueIdForInstance"}
+ - PASSED OVER - ChangeEntry{, "id"="fix-password-reset-token-expiration", "author"="", "class"="DatabaseChangelog", "method"="fixTokenExpiration"}
+ - PASSED OVER - ChangeEntry{, "id"="add-elastic-search-plugin", "author"="", "class"="DatabaseChangelog", "method"="addElasticSearchPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="add-dynamo-plugin", "author"="", "class"="DatabaseChangelog", "method"="addDynamoPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="use-png-logos", "author"="", "class"="DatabaseChangelog", "method"="usePngLogos"}
+ - PASSED OVER - ChangeEntry{, "id"="add-redis-plugin", "author"="", "class"="DatabaseChangelog", "method"="addRedisPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="add-msSql-plugin", "author"="", "class"="DatabaseChangelog", "method"="addMsSqlPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="createNewPageIndexAfterDroppingNewPage", "author"="", "class"="DatabaseChangelog", "method"="addNewPageIndexAfterDroppingNewPage"}
+ - PASSED OVER - ChangeEntry{, "id"="createNewActionIndexAfterDroppingNewAction", "author"="", "class"="DatabaseChangelog", "method"="addNewActionIndexAfterDroppingNewAction"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-page-and-actions", "author"="", "class"="DatabaseChangelog", "method"="migratePage"}
+ - PASSED OVER - ChangeEntry{, "id"="new-page-new-action-add-indexes", "author"="", "class"="DatabaseChangelog", "method"="addNewPageAndNewActionNewIndexes"}
+ - PASSED OVER - ChangeEntry{, "id"="new-action-add-index-pageId", "author"="", "class"="DatabaseChangelog", "method"="addNewActionIndexForPageId"}
+ - PASSED OVER - ChangeEntry{, "id"="update-action-index-to-single-multiple-indices", "author"="", "class"="DatabaseChangelog", "method"="updateActionIndexToSingleMultipleIndices"}
+ - PASSED OVER - ChangeEntry{, "id"="add-firestore-plugin", "author"="", "class"="DatabaseChangelog", "method"="addFirestorePlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="ensure-app-icons-and-colors", "author"="", "class"="DatabaseChangelog", "method"="ensureAppIconsAndColors"}
+ - PASSED OVER - ChangeEntry{, "id"="update-authentication-type", "author"="", "class"="DatabaseChangelog", "method"="updateAuthenticationTypes"}
+ - PASSED OVER - ChangeEntry{, "id"="add-isSendSessionEnabled-key-for-datasources", "author"="", "class"="DatabaseChangelog", "method"="addIsSendSessionEnabledPropertyInDatasources"}
+ - PASSED OVER - ChangeEntry{, "id"="add-redshift-plugin", "author"="", "class"="DatabaseChangelog", "method"="addRedshiftPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="clear-userdata-collection", "author"="", "class"="DatabaseChangelog", "method"="clearUserDataCollection"}
+ - PASSED OVER - ChangeEntry{, "id"="update-database-documentation-links-v1-2-1", "author"="", "class"="DatabaseChangelog", "method"="updateDatabaseDocumentationLinks_v1_2_1"}
+ - PASSED OVER - ChangeEntry{, "id"="add-amazons3-plugin", "author"="", "class"="DatabaseChangelog", "method"="addAmazonS3Plugin"}
+ - PASSED OVER - ChangeEntry{, "id"="add-app-viewer-invite-policy", "author"="", "class"="DatabaseChangelog", "method"="addAppViewerInvitePolicy"}
+ - PASSED OVER - ChangeEntry{, "id"="update-plugin-datasource-form-components", "author"="", "class"="DatabaseChangelog", "method"="updatePluginDatasourceFormComponents"}
+ - PASSED OVER - ChangeEntry{, "id"="update-database-encode-params-toggle", "author"="", "class"="DatabaseChangelog", "method"="updateEncodeParamsToggle"}
+ - PASSED OVER - ChangeEntry{, "id"="update-postgres-plugin-preparedStatement-config", "author"="", "class"="DatabaseChangelog", "method"="updatePostgresActionsSetPreparedStatementConfiguration"}
+ - PASSED OVER - ChangeEntry{, "id"="fix-dynamicBindingPathListForActions", "author"="", "class"="DatabaseChangelog", "method"="fixDynamicBindingPathListForExistingActions"}
+ - PASSED OVER - ChangeEntry{, "id"="update-database-action-configuration-timeout", "author"="", "class"="DatabaseChangelog", "method"="updateActionConfigurationTimeout"}
+ - PASSED OVER - ChangeEntry{, "id"="update-s3-datasource-configuration-and-label", "author"="", "class"="DatabaseChangelog", "method"="updateS3DatasourceConfigurationAndLabel"}
+ - PASSED OVER - ChangeEntry{, "id"="change-applayout-type-definition", "author"="", "class"="DatabaseChangelog", "method"="changeAppLayoutTypeDefinition"}
+ - PASSED OVER - ChangeEntry{, "id"="clear-example-apps", "author"="", "class"="DatabaseChangelog", "method"="clearExampleApps"}
+ - PASSED OVER - ChangeEntry{, "id"="update-mysql-postgres-mongo-ssl-mode", "author"="", "class"="DatabaseChangelog", "method"="updateMysqlPostgresMongoSslMode"}
+ - PASSED OVER - ChangeEntry{, "id"="add-commenting-permissions", "author"="", "class"="DatabaseChangelog", "method"="addCommentingPermissions"}
+ - PASSED OVER - ChangeEntry{, "id"="add-google-sheets-plugin", "author"="", "class"="DatabaseChangelog", "method"="addGoogleSheetsPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="mark-instance-unregistered", "author"="", "class"="DatabaseChangelog", "method"="markInstanceAsUnregistered"}
+ - PASSED OVER - ChangeEntry{, "id"="create-entry-in-sequence-per-organization-for-datasource", "author"="", "class"="DatabaseChangelog", "method"="createEntryInSequencePerOrganizationForDatasource"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-smartSubstitution-dataType", "author"="", "class"="DatabaseChangelog", "method"="migrateSmartSubstitutionDataTypeBoolean"}
+ - PASSED OVER - ChangeEntry{, "id"="update-mongo-import-from-srv-field", "author"="", "class"="DatabaseChangelog", "method"="updateMongoImportFromSrvField"}
+ - PASSED OVER - ChangeEntry{, "id"="delete-mongo-datasource-structures", "author"="", "class"="DatabaseChangelog", "method"="deleteMongoDatasourceStructures"}
+ - PASSED OVER - ChangeEntry{, "id"="set-mongo-actions-type-to-raw", "author"="", "class"="DatabaseChangelog", "method"="setMongoActionInputToRaw"}
+ - PASSED OVER - ChangeEntry{, "id"="update-firestore-where-conditions-data", "author"="", "class"="DatabaseChangelog", "method"="updateFirestoreWhereConditionsData"}
+ - PASSED OVER - ChangeEntry{, "id"="add-application-export-permissions", "author"="", "class"="DatabaseChangelog", "method"="addApplicationExportPermissions"}
+ - PASSED OVER - ChangeEntry{, "id"="add-snowflake-plugin", "author"="", "class"="DatabaseChangelog", "method"="addSnowflakePlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="mongo-form-merge-update-commands", "author"="", "class"="DatabaseChangelog", "method"="migrateUpdateOneToUpdateManyMongoFormCommand"}
+ - PASSED OVER - ChangeEntry{, "id"="ensure-user-created-and-updated-at-fields", "author"="", "class"="DatabaseChangelog", "method"="ensureUserCreatedAndUpdatedAt"}
+ - PASSED OVER - ChangeEntry{, "id"="add-and-update-order-for-all-pages", "author"="", "class"="DatabaseChangelog", "method"="addOrderToAllPagesOfApplication"}
+ - PASSED OVER - ChangeEntry{, "id"="mongo-form-migrate-raw", "author"="", "class"="DatabaseChangelog", "method"="migrateRawInputTypeToRawCommand"}
+ - PASSED OVER - ChangeEntry{, "id"="add-arangodb-plugin", "author"="", "class"="DatabaseChangelog", "method"="addArangoDBPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="set-svg-logo-to-plugins", "author"="", "class"="DatabaseChangelog", "method"="setSvgLogoToPluginIcons"}
+ - PASSED OVER - ChangeEntry{, "id"="remove-order-field-from-application- pages", "author"="", "class"="DatabaseChangelog", "method"="removePageOrderFieldFromApplicationPages"}
+ - PASSED OVER - ChangeEntry{, "id"="create-plugin-reference-for-genarate-CRUD-page", "author"="", "class"="DatabaseChangelog", "method"="createPluginReferenceForGenerateCRUDPage"}
+ - PASSED OVER - ChangeEntry{, "id"="encrypt-certificate", "author"="", "class"="DatabaseChangelog", "method"="encryptCertificateAndPassword"}
+ - PASSED OVER - ChangeEntry{, "id"="create-plugin-reference-for-S3-GSheet-genarate-CRUD-page", "author"="", "class"="DatabaseChangelog", "method"="createPluginReferenceForS3AndGSheetGenerateCRUDPage"}
+ - PASSED OVER - ChangeEntry{, "id"="application-git-metadata", "author"="", "class"="DatabaseChangelog", "method"="addApplicationGitMetadataFieldAndIndex"}
+ - PASSED OVER - ChangeEntry{, "id"="add-js-plugin", "author"="", "class"="DatabaseChangelog", "method"="addJSPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="update-google-sheet-plugin-smartSubstitution-config", "author"="", "class"="DatabaseChangelog", "method"="updateGoogleSheetActionsSetSmartSubstitutionConfiguration"}
+ - PASSED OVER - ChangeEntry{, "id"="uninstall-mongo-uqi-plugin", "author"="", "class"="DatabaseChangelog", "method"="uninstallMongoUqiPluginAndRemoveAllActions"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-mongo-to-uqi", "author"="", "class"="DatabaseChangelog", "method"="migrateMongoPluginToUqi"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-mongo-uqi-dynamicBindingPathList", "author"="", "class"="DatabaseChangelog", "method"="migrateMongoPluginDynamicBindingListUqi"}
+ - PASSED OVER - ChangeEntry{, "id"="update-plugin-package-name-index", "author"="", "class"="DatabaseChangelog", "method"="updatePluginPackageNameIndexToPluginNamePackageNameAndVersion"}
+ - PASSED OVER - ChangeEntry{, "id"="delete-orphan-actions", "author"="", "class"="DatabaseChangelog", "method"="deleteOrphanActions"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-old-app-color-to-new-colors", "author"="", "class"="DatabaseChangelog", "method"="migrateOldAppColorsToNewColors"}
+ - PASSED OVER - ChangeEntry{, "id"="update-s3-permanent-url-toggle-default-value", "author"="", "class"="DatabaseChangelog", "method"="updateS3PermanentUrlToggleDefaultValue"}
+ - PASSED OVER - ChangeEntry{, "id"="application-git-metadata-index", "author"="", "class"="DatabaseChangelog", "method"="updateGitApplicationMetadataIndex"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-s3-to-uqi", "author"="", "class"="DatabaseChangelog", "method"="migrateS3PluginToUqi"}
+ - PASSED OVER - ChangeEntry{, "id"="set-slug-to-application-and-page", "author"="", "class"="DatabaseChangelog", "method"="setSlugToApplicationAndPage"}
+ - PASSED OVER - ChangeEntry{, "id"="update-list-widget-trigger-paths", "author"="", "class"="DatabaseChangelog", "method"="removeUnusedTriggerPathsListWidget"}
+ - PASSED OVER - ChangeEntry{, "id"="update-s3-action-configuration-for-type", "author"="", "class"="DatabaseChangelog", "method"="updateS3ActionConfigurationBodyForContentTypeSupport"}
+ - PASSED OVER - ChangeEntry{, "id"="fix-ispublic-is-false-for-public-apps", "author"="", "class"="DatabaseChangelog", "method"="fixIsPublicIsSetFalseWhenAppIsPublic"}
+ - PASSED OVER - ChangeEntry{, "id"="update-js-action-client-side-execution", "author"="", "class"="DatabaseChangelog", "method"="updateJsActionsClientSideExecution"}
+ - PASSED OVER - ChangeEntry{, "id"="add-smtp-plugin", "author"="", "class"="DatabaseChangelog", "method"="addSmtpPluginPlugin"}
+ - PASSED OVER - ChangeEntry{, "id"="update-mockdb-endpoint", "author"="", "class"="DatabaseChangelog", "method"="updateMockdbEndpoint"}
+ - PASSED OVER - ChangeEntry{, "id"="add-google-sheets-plugin-name", "author"="", "class"="DatabaseChangelog", "method"="addPluginNameForGoogleSheets"}
+ - PASSED OVER - ChangeEntry{, "id"="insert-default-resources", "author"="", "class"="DatabaseChangelog", "method"="insertDefaultResources"}
+ - PASSED OVER - ChangeEntry{, "id"="flush-spring-redis-keys", "author"="", "class"="DatabaseChangelog", "method"="clearRedisCache"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-firestore-to-uqi", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePluginToUqi"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-firestore-to-uqi-2", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePluginToUqi2"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-firestore-pagination-data", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePaginationData"}
+ - PASSED OVER - ChangeEntry{, "id"="update-mongodb-mockdb-endpoint", "author"="", "class"="DatabaseChangelog", "method"="updateMongoMockdbEndpoint"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-firestore-to-uqi-3", "author"="", "class"="DatabaseChangelog", "method"="migrateFirestorePluginToUqi3"}
+ - PASSED OVER - ChangeEntry{, "id"="create-system-themes", "author"="", "class"="DatabaseChangelog", "method"="createSystemThemes"}
+ - PASSED OVER - ChangeEntry{, "id"="add-limit-field-data-to-mongo-aggregate-cmd", "author"="", "class"="DatabaseChangelog", "method"="addLimitFieldDataToMongoAggregateCommand"}
+ - PASSED OVER - ChangeEntry{, "id"="update-index-for-git", "author"="", "class"="DatabaseChangelog", "method"="updateGitIndexes"}
+ - PASSED OVER - ChangeEntry{, "id"="update-mockdb-endpoint-2", "author"="", "class"="DatabaseChangelog", "method"="updateMockdbEndpoint2"}
+ - PASSED OVER - ChangeEntry{, "id"="migrate-from-RSA-SHA1-to-ECDSA-SHA2-protocol-for-key-generation", "author"="", "class"="DatabaseChangelog", "method"="migrateFromRSASha1ToECDSASha2Protocol"}
+ - PASSED OVER - ChangeEntry{, "id"="use-assets-cdn-for-plugin-icons", "author"="", "class"="DatabaseChangelog", "method"="useAssetsCDNForPluginIcons"}
+ - PASSED OVER - ChangeEntry{, "id"="update-index-for-newAction-actionCollection-userData", "author"="", "class"="DatabaseChangelog", "method"="updateNewActionActionCollectionAndUserDataIndexes"}
+ - PASSED OVER - ChangeEntry{, "id"="mark-mssql-crud-unavailable", "author"="", "class"="DatabaseChangelog", "method"="markMSSQLCrudUnavailable"}
+ - PASSED OVER - ChangeEntry{, "id"="update-index-for-newAction-actionCollection", "author"="", "class"="DatabaseChangelog", "method"="updateNewActionActionCollectionIndexes"}
+ - method[createSystemThemes2] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.springdata.v3.decorator.impl.MongockTemplate]
+ - RE-APPLIED - ChangeEntry{, "id"="create-system-themes-v2", "author"="", "class"="DatabaseChangelog", "method"="createSystemThemes2"}
+ - PASSED OVER - ChangeEntry{, "id"="set-firestore-smart-substitution-to-false-for-old-cmds", "author"="", "class"="DatabaseChangelog", "method"="setFirestoreSmartSubstitutionToFalseForOldCommands"}
+ - PASSED OVER - ChangeEntry{, "id"="fix-plugin-title-casing", "author"="", "class"="DatabaseChangelog2", "method"="fixPluginTitleCasing"}
+ - PASSED OVER - ChangeEntry{, "id"="deprecate-archivedAt-in-action", "author"="", "class"="DatabaseChangelog2", "method"="deprecateArchivedAtForNewAction"}
+ - PASSED OVER - ChangeEntry{, "id"="update-form-data-for-uqi-mode", "author"="", "class"="DatabaseChangelog2", "method"="updateActionFormDataPath"}
+ - PASSED OVER - ChangeEntry{, "id"="add-isConfigured-flag-for-all-datasources", "author"="", "class"="DatabaseChangelog2", "method"="updateIsConfiguredFlagForAllTheExistingDatasources"}
+ - PASSED OVER - ChangeEntry{, "id"="set-application-version", "author"="", "class"="DatabaseChangelog2", "method"="setDefaultApplicationVersion"}
+ - PASSED OVER - ChangeEntry{, "id"="delete-orphan-pages", "author"="", "class"="DatabaseChangelog2", "method"="deleteOrphanPages"}
+ - PASSED OVER - ChangeEntry{, "id"="update-git-indexes", "author"="", "class"="DatabaseChangelog2", "method"="addIndexesForGit"}
+ - PASSED OVER - ChangeEntry{, "id"="update-organization-slugs", "author"="", "class"="DatabaseChangelog2", "method"="updateOrganizationSlugs"}
+ - PASSED OVER - ChangeEntry{, "id"="copy-organization-to-workspaces", "author"="", "class"="DatabaseChangelog2", "method"="copyOrganizationToWorkspaces"}
+ - PASSED OVER - ChangeEntry{, "id"="add-workspace-indexes", "author"="", "class"="DatabaseChangelog2", "method"="addWorkspaceIndexes"}
+ - PASSED OVER - ChangeEntry{, "id"="update-sequence-names-from-organization-to-workspace", "author"="", "class"="DatabaseChangelog2", "method"="updateSequenceNamesFromOrganizationToWorkspace"}
+ - PASSED OVER - ChangeEntry{, "id"="add-default-tenant", "author"="", "class"="DatabaseChangelog2", "method"="addDefaultTenant"}
+ - PASSED OVER - ChangeEntry{, "id"="add-tenant-to-all-workspaces", "author"="", "class"="DatabaseChangelog2", "method"="addTenantToWorkspaces"}
+ - PASSED OVER - ChangeEntry{, "id"="add-tenant-to-all-users-and-flush-redis", "author"="", "class"="DatabaseChangelog2", "method"="addTenantToUsersAndFlushRedis"}
+ - Mongock releasing the lock
+ - Mongock released the lock
+ - Mongock has finished
+ - Exposing 1 endpoint(s) beneath base path '/actuator'
+ - Netty started on port 8080
+ - Started ServerApplication in 21.951 seconds (JVM running for 22.877)
+ - Triggering registration of this instance...
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$1656/0x0000000840aaf040@4492b393 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:27017}, caused by {java.net.ConnectException: Connection refused}}]}. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:13, serverValue:18}] to localhost:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15023600, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000009, setVersion=1, topologyVersion=TopologyVersion{processId=62a44e2478e45476b2d81136, counter=6}, lastWriteDate=Sat Jun 11 08:11:30 UTC 2022, lastUpdateTimeNanos=3356925972400}
+ - Opened connection [connectionId{localValue:14, serverValue:19}] to localhost:27017
+
+ █████╗ ██████╗ ██████╗ ███████╗███╗   ███╗██╗████████╗██╗  ██╗    ██╗███████╗    ██████╗ ██╗   ██╗███╗   ██╗███╗   ██╗██╗███╗   ██╗ ██████╗ ██╗
+██╔══██╗██╔══██╗██╔══██╗██╔════╝████╗ ████║██║╚══██╔══╝██║  ██║    ██║██╔════╝    ██╔══██╗██║   ██║████╗  ██║████╗  ██║██║████╗  ██║██╔════╝ ██║
+███████║██████╔╝██████╔╝███████╗██╔████╔██║██║   ██║   ███████║    ██║███████╗    ██████╔╝██║   ██║██╔██╗ ██║██╔██╗ ██║██║██╔██╗ ██║██║  ███╗██║
+██╔══██║██╔═══╝ ██╔═══╝ ╚════██║██║╚██╔╝██║██║   ██║   ██╔══██║    ██║╚════██║    ██╔══██╗██║   ██║██║╚██╗██║██║╚██╗██║██║██║╚██╗██║██║   ██║╚═╝
+██║  ██║██║     ██║     ███████║██║ ╚═╝ ██║██║   ██║   ██║  ██║    ██║███████║    ██║  ██║╚██████╔╝██║ ╚████║██║ ╚████║██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═╝╚═╝     ╚═╝     ╚══════╝╚═╝     ╚═╝╚═╝   ╚═╝   ╚═╝  ╚═╝    ╚═╝╚══════╝    ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+
+Please open http://localhost:<port> in your browser to experience Appsmith!
+
+ - Opened connection [connectionId{localValue:15, serverValue:20}] to localhost:27017
+ - Opened connection [connectionId{localValue:16, serverValue:21}] to localhost:27017
+ - Opened connection [connectionId{localValue:17, serverValue:23}] to localhost:27017
+ - Login succeeded for user: User(name=baobaoack000, email=baobaoack115@gmail.com, roles=null, password=$2a$10$6ulfaKsFx0WRPLX8zWNHGegwFlwhyX16dLO3PMV3BLSAmfXG9AZLK, passwordResetInitiated=false, source=FORM, state=ACTIVATED, isEnabled=true, currentOrganizationId=62a068f6b242ac0314bbdb21, organizationIds=[62a068f6b242ac0314bbdb21], examplesOrganizationId=null, groupIds=[], permissions=[], inviteToken=null, isAnonymous=false, tenantId=62a068dcb242ac0314bbdb1c)
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=1b15676a-3ce4-441d-a652-cb3779bd4aa3 - Checking if feature LINTING is active for user baobaoack115@gmail.com
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=1b15676a-3ce4-441d-a652-cb3779bd4aa3 - Checking if feature MULTIPLAYER is active for user baobaoack115@gmail.com
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=f51d8364-835a-407b-b978-fc104ab028fd - Going to get all applications grouped by workspace
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=4feaf731-41ed-4c9f-9531-934c2ec9cc8b - Going to get all resources from base controller {}
+ - Opened connection [connectionId{localValue:18, serverValue:24}] to localhost:27017
+ - Opened connection [connectionId{localValue:19, serverValue:25}] to localhost:27017
+ - Opened connection [connectionId{localValue:20, serverValue:26}] to localhost:27017
+ - Opened connection [connectionId{localValue:21, serverValue:27}] to localhost:27017
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=08b93fdb-7bc3-4a05-a0d3-df1837d2dc2a - Going to get resource from base controller for id: 62a068f6b242ac0314bbdb21
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=c0b1f713-d1d2-46a8-bfff-bdc54d173947 - Going to get all published action collections with application Id: 62a068f6b242ac0314bbdb22, branch: null
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=3e4ec9c9-9711-49b2-953f-93e804d5f2e4 - javax.persistence.spi::No valid providers found.
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=5685c174-1ac4-4c58-a820-4ec68fd2d84e - Going to get all resources from base controller {}
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=08f1f7bf-d183-4eb6-a34b-9f764be5ee4a - Going to get all actions with params: {applicationId=[62a068f6b242ac0314bbdb22]}, branch: null
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=7cb9b546-a4c4-49a9-ae10-dfd8739bb619 - Going to get all resources from base controller {organizationId=[62a068f6b242ac0314bbdb21]}
+ - Fetching plugins by params: {organizationId=[62a068f6b242ac0314bbdb21]} for org: baobaoack000's apps
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=6e9e59a2-1675-4ea1-a664-95c84b180cce - Going to get all unpublished action collections with params: {applicationId=[62a068f6b242ac0314bbdb22]}, branch: null
+ - Error loading templates metadata in plugin restapi-plugin
+ - Error loading templates metadata in plugin rapidapi-plugin
+ - Error loading templates metadata in plugin elasticsearch-plugin
+ - Error loading templates metadata in plugin dynamo-plugin
+ - Error loading templates metadata in plugin redis-plugin
+ - Error loading templates metadata in plugin firestore-plugin
+ - Error loading templates metadata in plugin redshift-plugin
+ - Error loading templates metadata in plugin amazons3-plugin
+ - Error loading templates metadata in plugin google-sheets-plugin
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=49fde5d8-02f3-449e-886f-6c12580cee34 - Going to get all resources from base controller {organizationId=[62a068f6b242ac0314bbdb21]}
+ - Error loading templates metadata in plugin js-plugin
+ - Error loading templates metadata in plugin smtp-plugin
+ - Error loading templates metadata in plugin saas-plugin
+userEmail=baobaoack115@gmail.com, sessionId=5f7844ff-e045-4c65-9dcf-1fe0a5126440, thread=lettuce-epollEventLoop-6-1, requestId=3cd24e67-95c3-4a1e-ac4e-ecc3778fe74e - Going to get all applications grouped by workspace
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$1656/0x0000000840aaf040@5084d501 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:22, serverValue:28}] to localhost:27017
+ - Opened connection [connectionId{localValue:23, serverValue:29}] to localhost:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19020000, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000009, setVersion=1, topologyVersion=TopologyVersion{processId=62a44e2478e45476b2d81136, counter=6}, lastWriteDate=Sat Jun 11 08:12:38 UTC 2022, lastUpdateTimeNanos=3427124621300}
+ - Closed connection [connectionId{localValue:25}] to localhost:27017 because there was a socket exception raised by this connection.
+ - Closed connection [connectionId{localValue:24}] to localhost:27017 because there was a socket exception raised by this connection.
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$1656/0x0000000840aaf040@186e167a from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:26, serverValue:32}] to localhost:27017
+ - Opened connection [connectionId{localValue:27, serverValue:33}] to localhost:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3385900, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000009, setVersion=1, topologyVersion=TopologyVersion{processId=62a44e2478e45476b2d81136, counter=6}, lastWriteDate=Sat Jun 11 08:12:48 UTC 2022, lastUpdateTimeNanos=3434507111800}
+ - Closed connection [connectionId{localValue:29}] to localhost:27017 because there was a socket exception raised by this connection.
+ - Closed connection [connectionId{localValue:28}] to localhost:27017 because there was a socket exception raised by this connection.
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$1656/0x0000000840aaf040@12ad328e from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:30, serverValue:36}] to localhost:27017
+ - Opened connection [connectionId{localValue:31, serverValue:37}] to localhost:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3287600, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000009, setVersion=1, topologyVersion=TopologyVersion{processId=62a44e2478e45476b2d81136, counter=6}, lastWriteDate=Sat Jun 11 08:12:48 UTC 2022, lastUpdateTimeNanos=3442211097800}
+ - Closed connection [connectionId{localValue:33}] to localhost:27017 because there was a socket exception raised by this connection.
+ - Closed connection [connectionId{localValue:32}] to localhost:27017 because there was a socket exception raised by this connection.
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$1656/0x0000000840aaf040@64f7d107 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:35, serverValue:41}] to localhost:27017
+ - Opened connection [connectionId{localValue:34, serverValue:40}] to localhost:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3050100, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000009, setVersion=1, topologyVersion=TopologyVersion{processId=62a44e2478e45476b2d81136, counter=6}, lastWriteDate=Sat Jun 11 08:12:58 UTC 2022, lastUpdateTimeNanos=3449795933900}
+ - Closed connection [connectionId{localValue:37}] to localhost:27017 because there was a socket exception raised by this connection.
+ - Closed connection [connectionId{localValue:36}] to localhost:27017 because there was a socket exception raised by this connection.
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$1656/0x0000000840aaf040@5c5168c3 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:38, serverValue:44}] to 127.0.0.1:27017
+ - Opened connection [connectionId{localValue:39, serverValue:45}] to 127.0.0.1:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2166300, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000009, setVersion=1, topologyVersion=TopologyVersion{processId=62a44e2478e45476b2d81136, counter=6}, lastWriteDate=Sat Jun 11 08:13:08 UTC 2022, lastUpdateTimeNanos=3460092237300}
+ - Opened connection [connectionId{localValue:40, serverValue:46}] to 127.0.0.1:27017
+ - Closed connection [connectionId{localValue:40, serverValue:46}] to 127.0.0.1:27017 because the pool has been closed.
+ - Going to test the datasource with name: Untitled Datasource 3 and id: null
+ - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+ - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$1656/0x0000000840aaf040@34e478f5 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+ - Opened connection [connectionId{localValue:41, serverValue:47}] to localhost:27017
+ - Opened connection [connectionId{localValue:42, serverValue:48}] to localhost:27017
+ - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3694500, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000009, setVersion=1, topologyVersion=TopologyVersion{processId=62a44e2478e45476b2d81136, counter=6}, lastWriteDate=Sat Jun 11 08:13:38 UTC 2022, lastUpdateTimeNanos=3483152939700}
+ - Opened connection [connectionId{localValue:43, serverValue:49}] to localhost:27017
+ - Closed connection [connectionId{localValue:43, serverValue:49}] to localhost:27017 because the pool has been closed.

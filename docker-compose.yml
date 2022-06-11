@@ -48,8 +48,6 @@ services:
     networks:
       express-mongo:
         ipv4_address: 172.16.0.2
-
-    entrypoint: ["mongod", "--bind_ip", "127.0.0.1"]
     expose:
       - 27017
   appsmith:
