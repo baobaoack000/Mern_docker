@@ -6,7 +6,7 @@
     "start": "nodemon ./bin/www",
     "format": " prettier --write **/*.js",
     "lint": "prettier --check **/*.js",
-    "test": "mocha"
+    "test": "mocha --recursive --exit"
   },
   "dependencies": {
     "@sentry/node": "^6.19.6",

@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
 
 exports.connect = (app) => { 
+  console.log("Try to connect to mongoDB");
   const connectWithretry = () => {
-    console.log("Try to connect to mongoDB");
+    mongoose.Promise = global.Promise;
     mongoose
-      .connect("mongodb://127.0.0.1:27017/test", {
+      .connect("mongodb://root:root@localhost:27017/", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true,

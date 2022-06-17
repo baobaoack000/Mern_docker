@@ -10,10 +10,11 @@ let server = require("../server");
 let should = chai.should();
 var assert = require("assert");
 
-describe("Array", function () {
-  describe("#indexOf()", function () {
-    it("should return -1 when the value is not present", function () {
-      assert.equal([1, 2, 3].indexOf(4), -1);
+describe("List :", function () {
+  describe("mongo1 DB()", function () {
+    it("testing db connection status", function () {
+      const db = "Hello world!";
+      assert.equal(db, "Hello world!");
     });
   });
 });

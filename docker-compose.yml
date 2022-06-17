@@ -22,6 +22,8 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     restart: always
+    ports:
+      - 3001:3001
     depends_on:
       - mongo
       - hadolint
@@ -33,7 +35,7 @@ services:
       - react-express
       - hadolint
     expose:
-      - 3000
+      - 3001
   mongo:
     container_name: mongo1
     restart: always
@@ -44,7 +46,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
-      - ./backend/db:/data/db
+      - ./data:/data/db
     networks:
       express-mongo:
         ipv4_address: 172.16.0.2
