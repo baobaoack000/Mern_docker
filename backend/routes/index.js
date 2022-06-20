@@ -1,10 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-const { Accounts } = require('../schema/users');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', async function (req, res, next) {
   res.render('index', { title: 'Express' });
 });
 

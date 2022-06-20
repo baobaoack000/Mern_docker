@@ -2,7 +2,7 @@
 process.env.NODE_ENV = "test";
 
 let mongoose = require("mongoose");
-let User = require("../model/db/test");
+let User = require("../model/db/users");
 
 //Require the dev-dependencies
 let chai = require("chai");
@@ -12,9 +12,14 @@ var assert = require("assert");
 
 describe("List :", function () {
   describe("mongo1 DB()", function () {
-    it("testing db connection status", function () {
-      const db = "Hello world!";
-      assert.equal(db, "Hello world!");
+    it("testing database insert", function (done) {
+      const newUser = new User.Accounts({ name: "Avocado", gender: "Female", SocialCode: "100012"})
+      newUser.save()
+      .then(() => {
+                //if the newUser is saved in db and it is not new
+                assert(!newUser.isNew);
+                done();
+            });
     });
   });
 });
