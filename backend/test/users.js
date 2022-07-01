@@ -5,9 +5,6 @@ let mongoose = require("mongoose");
 let User = require("../model/db/users");
 
 //Require the dev-dependencies
-let chai = require("chai");
-let server = require("../server");
-let should = chai.should();
 var assert = require("assert");
 
 describe("List :", function () {
@@ -23,3 +20,4 @@ describe("List :", function () {
     });
   });
 });
+

@@ -11,7 +11,9 @@ mongoose.connection
   });
 
 // runs before each test
-beforeEach(async(done) => {
-  mongoose.connection.dropDatabase();
-  done();
+beforeEach((done) => {
+  mongoose.connection.dropDatabase(() => {
+     done();
+  });
+ 
 });
