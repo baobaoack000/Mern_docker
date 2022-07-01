@@ -1,0 +1,529 @@
+1530:C 08 Jun 2022 09:15:51.857 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1530:C 08 Jun 2022 09:15:51.857 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1530, just started
+1530:C 08 Jun 2022 09:15:51.857 # Configuration loaded
+1530:M 08 Jun 2022 09:15:51.858 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1530
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1530:M 08 Jun 2022 09:15:51.859 # Server initialized
+1530:M 08 Jun 2022 09:15:51.859 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1530:M 08 Jun 2022 09:15:51.859 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1530:M 08 Jun 2022 09:15:51.860 * Ready to accept connections
+1530:signal-handler (1654679906) Received SIGTERM scheduling shutdown...
+1530:M 08 Jun 2022 09:18:26.643 # User requested shutdown...
+1530:M 08 Jun 2022 09:18:26.643 * Saving the final RDB snapshot before exiting.
+1530:M 08 Jun 2022 09:18:26.647 * DB saved on disk
+1530:M 08 Jun 2022 09:18:26.647 * Removing the pid file.
+1530:M 08 Jun 2022 09:18:26.647 # Redis is now ready to exit, bye bye...
+1378:C 08 Jun 2022 09:19:28.049 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1378:C 08 Jun 2022 09:19:28.049 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1378, just started
+1378:C 08 Jun 2022 09:19:28.049 # Configuration loaded
+1378:M 08 Jun 2022 09:19:28.049 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1378
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1378:M 08 Jun 2022 09:19:28.050 # Server initialized
+1378:M 08 Jun 2022 09:19:28.050 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1378:M 08 Jun 2022 09:19:28.050 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1378:M 08 Jun 2022 09:19:28.050 * Ready to accept connections
+1378:M 08 Jun 2022 09:24:29.067 * 10 changes in 300 seconds. Saving...
+1378:M 08 Jun 2022 09:24:29.067 * Background saving started by pid 2036
+2036:C 08 Jun 2022 09:24:29.073 * DB saved on disk
+2036:C 08 Jun 2022 09:24:29.073 * RDB: 0 MB of memory used by copy-on-write
+1378:M 08 Jun 2022 09:24:29.168 * Background saving terminated with success
+1378:C 08 Jun 2022 09:27:53.638 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1378:C 08 Jun 2022 09:27:53.639 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1378, just started
+1378:C 08 Jun 2022 09:27:53.639 # Configuration loaded
+1378:M 08 Jun 2022 09:27:53.639 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1378
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1378:M 08 Jun 2022 09:27:53.640 # Server initialized
+1378:M 08 Jun 2022 09:27:53.640 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1378:M 08 Jun 2022 09:27:53.640 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1378:M 08 Jun 2022 09:27:53.640 * Ready to accept connections
+1378:M 08 Jun 2022 09:32:54.063 * 10 changes in 300 seconds. Saving...
+1378:M 08 Jun 2022 09:32:54.063 * Background saving started by pid 2324
+2324:C 08 Jun 2022 09:32:54.070 * DB saved on disk
+2324:C 08 Jun 2022 09:32:54.070 * RDB: 0 MB of memory used by copy-on-write
+1378:M 08 Jun 2022 09:32:54.164 * Background saving terminated with success
+1378:M 08 Jun 2022 09:37:55.079 * 10 changes in 300 seconds. Saving...
+1378:M 08 Jun 2022 09:37:55.079 * Background saving started by pid 2662
+2662:C 08 Jun 2022 09:37:55.082 * DB saved on disk
+2662:C 08 Jun 2022 09:37:55.083 * RDB: 0 MB of memory used by copy-on-write
+1378:M 08 Jun 2022 09:37:55.179 * Background saving terminated with success
+1378:M 08 Jun 2022 09:48:11.960 * 10 changes in 300 seconds. Saving...
+1378:M 08 Jun 2022 09:48:11.960 * Background saving started by pid 3237
+3237:C 08 Jun 2022 09:48:11.964 * DB saved on disk
+3237:C 08 Jun 2022 09:48:11.965 * RDB: 0 MB of memory used by copy-on-write
+1378:M 08 Jun 2022 09:48:12.061 * Background saving terminated with success
+1378:M 08 Jun 2022 10:03:13.093 * 1 changes in 900 seconds. Saving...
+1378:M 08 Jun 2022 10:03:13.093 * Background saving started by pid 4077
+4077:C 08 Jun 2022 10:03:13.102 * DB saved on disk
+4077:C 08 Jun 2022 10:03:13.103 * RDB: 0 MB of memory used by copy-on-write
+1378:M 08 Jun 2022 10:03:13.194 * Background saving terminated with success
+1379:C 11 Jun 2022 07:21:23.051 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1379:C 11 Jun 2022 07:21:23.051 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1379, just started
+1379:C 11 Jun 2022 07:21:23.051 # Configuration loaded
+1379:M 11 Jun 2022 07:21:23.052 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1379
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1379:M 11 Jun 2022 07:21:23.056 # Server initialized
+1379:M 11 Jun 2022 07:21:23.057 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1379:M 11 Jun 2022 07:21:23.057 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1379:M 11 Jun 2022 07:21:23.057 * Ready to accept connections
+1379:M 11 Jun 2022 07:26:24.092 * 10 changes in 300 seconds. Saving...
+1379:M 11 Jun 2022 07:26:24.092 * Background saving started by pid 1969
+1969:C 11 Jun 2022 07:26:24.098 * DB saved on disk
+1969:C 11 Jun 2022 07:26:24.098 * RDB: 0 MB of memory used by copy-on-write
+1379:M 11 Jun 2022 07:26:24.193 * Background saving terminated with success
+1379:M 11 Jun 2022 07:31:25.085 * 10 changes in 300 seconds. Saving...
+1379:M 11 Jun 2022 07:31:25.086 * Background saving started by pid 2321
+2321:C 11 Jun 2022 07:31:25.092 * DB saved on disk
+2321:C 11 Jun 2022 07:31:25.093 * RDB: 0 MB of memory used by copy-on-write
+1379:M 11 Jun 2022 07:31:25.186 * Background saving terminated with success
+1379:M 11 Jun 2022 07:37:41.556 * 10 changes in 300 seconds. Saving...
+1379:M 11 Jun 2022 07:37:41.557 * Background saving started by pid 2662
+2662:C 11 Jun 2022 07:37:41.564 * DB saved on disk
+2662:C 11 Jun 2022 07:37:41.565 * RDB: 0 MB of memory used by copy-on-write
+1379:M 11 Jun 2022 07:37:41.657 * Background saving terminated with success
+1379:M 11 Jun 2022 07:42:42.082 * 10 changes in 300 seconds. Saving...
+1379:M 11 Jun 2022 07:42:42.082 * Background saving started by pid 2932
+2932:C 11 Jun 2022 07:42:42.088 * DB saved on disk
+2932:C 11 Jun 2022 07:42:42.089 * RDB: 0 MB of memory used by copy-on-write
+1379:M 11 Jun 2022 07:42:42.183 * Background saving terminated with success
+1379:C 11 Jun 2022 08:11:10.260 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1379:C 11 Jun 2022 08:11:10.260 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1379, just started
+1379:C 11 Jun 2022 08:11:10.260 # Configuration loaded
+1379:M 11 Jun 2022 08:11:10.261 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1379
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1379:M 11 Jun 2022 08:11:10.262 # Server initialized
+1379:M 11 Jun 2022 08:11:10.262 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1379:M 11 Jun 2022 08:11:10.262 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1379:M 11 Jun 2022 08:11:10.262 * Ready to accept connections
+1379:M 11 Jun 2022 08:16:11.038 * 10 changes in 300 seconds. Saving...
+1379:M 11 Jun 2022 08:16:11.039 * Background saving started by pid 2052
+2052:C 11 Jun 2022 08:16:11.045 * DB saved on disk
+2052:C 11 Jun 2022 08:16:11.046 * RDB: 0 MB of memory used by copy-on-write
+1379:M 11 Jun 2022 08:16:11.140 * Background saving terminated with success
+1377:C 13 Jun 2022 02:12:21.656 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1377:C 13 Jun 2022 02:12:21.656 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1377, just started
+1377:C 13 Jun 2022 02:12:21.656 # Configuration loaded
+1377:M 13 Jun 2022 02:12:21.657 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1377
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1377:M 13 Jun 2022 02:12:21.661 # Server initialized
+1377:M 13 Jun 2022 02:12:21.661 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1377:M 13 Jun 2022 02:12:21.661 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1377:M 13 Jun 2022 02:12:21.662 * Ready to accept connections
+1377:M 13 Jun 2022 02:17:22.016 * 10 changes in 300 seconds. Saving...
+1377:M 13 Jun 2022 02:17:22.017 * Background saving started by pid 1984
+1984:C 13 Jun 2022 02:17:22.024 * DB saved on disk
+1984:C 13 Jun 2022 02:17:22.025 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 02:17:22.118 * Background saving terminated with success
+1377:M 13 Jun 2022 02:24:30.013 * 10 changes in 300 seconds. Saving...
+1377:M 13 Jun 2022 02:24:30.013 * Background saving started by pid 2382
+2382:C 13 Jun 2022 02:24:30.020 * DB saved on disk
+2382:C 13 Jun 2022 02:24:30.021 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 02:24:30.114 * Background saving terminated with success
+1377:M 13 Jun 2022 02:39:31.022 * 1 changes in 900 seconds. Saving...
+1377:M 13 Jun 2022 02:39:31.023 * Background saving started by pid 3162
+3162:C 13 Jun 2022 02:39:31.029 * DB saved on disk
+3162:C 13 Jun 2022 02:39:31.029 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 02:39:31.123 * Background saving terminated with success
+1377:M 13 Jun 2022 03:19:59.982 * 1 changes in 900 seconds. Saving...
+1377:M 13 Jun 2022 03:19:59.984 * Background saving started by pid 5257
+5257:C 13 Jun 2022 03:19:59.991 * DB saved on disk
+5257:C 13 Jun 2022 03:19:59.992 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 03:20:00.085 * Background saving terminated with success
+1377:M 13 Jun 2022 03:25:01.059 * 10 changes in 300 seconds. Saving...
+1377:M 13 Jun 2022 03:25:01.060 * Background saving started by pid 5570
+5570:C 13 Jun 2022 03:25:01.066 * DB saved on disk
+5570:C 13 Jun 2022 03:25:01.067 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 03:25:01.160 * Background saving terminated with success
+1377:M 13 Jun 2022 03:30:02.037 * 10 changes in 300 seconds. Saving...
+1377:M 13 Jun 2022 03:30:02.037 * Background saving started by pid 5860
+5860:C 13 Jun 2022 03:30:02.046 * DB saved on disk
+5860:C 13 Jun 2022 03:30:02.047 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 03:30:02.138 * Background saving terminated with success
+1377:M 13 Jun 2022 03:35:03.051 * 10 changes in 300 seconds. Saving...
+1377:M 13 Jun 2022 03:35:03.052 * Background saving started by pid 6129
+6129:C 13 Jun 2022 03:35:03.058 * DB saved on disk
+6129:C 13 Jun 2022 03:35:03.059 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 03:35:03.153 * Background saving terminated with success
+1377:M 13 Jun 2022 06:46:00.401 * 1 changes in 900 seconds. Saving...
+1377:M 13 Jun 2022 06:46:00.402 * Background saving started by pid 6621
+6621:C 13 Jun 2022 06:46:00.411 * DB saved on disk
+6621:C 13 Jun 2022 06:46:00.412 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 06:46:00.503 * Background saving terminated with success
+1377:M 13 Jun 2022 06:51:01.023 * 10 changes in 300 seconds. Saving...
+1377:M 13 Jun 2022 06:51:01.024 * Background saving started by pid 6912
+6912:C 13 Jun 2022 06:51:01.030 * DB saved on disk
+6912:C 13 Jun 2022 06:51:01.031 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 06:51:01.124 * Background saving terminated with success
+1377:M 13 Jun 2022 06:56:48.056 * 10 changes in 300 seconds. Saving...
+1377:M 13 Jun 2022 06:56:48.057 * Background saving started by pid 7225
+7225:C 13 Jun 2022 06:56:48.060 * DB saved on disk
+7225:C 13 Jun 2022 06:56:48.061 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 06:56:48.157 * Background saving terminated with success
+1377:M 13 Jun 2022 07:01:49.094 * 10 changes in 300 seconds. Saving...
+1377:M 13 Jun 2022 07:01:49.094 * Background saving started by pid 7500
+7500:C 13 Jun 2022 07:01:49.098 * DB saved on disk
+7500:C 13 Jun 2022 07:01:49.099 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 07:01:49.195 * Background saving terminated with success
+1377:M 13 Jun 2022 07:08:10.299 * 10 changes in 300 seconds. Saving...
+1377:M 13 Jun 2022 07:08:10.300 * Background saving started by pid 7862
+7862:C 13 Jun 2022 07:08:10.303 * DB saved on disk
+7862:C 13 Jun 2022 07:08:10.304 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 07:08:10.400 * Background saving terminated with success
+1377:M 13 Jun 2022 07:13:11.094 * 10 changes in 300 seconds. Saving...
+1377:M 13 Jun 2022 07:13:11.094 * Background saving started by pid 8160
+8160:C 13 Jun 2022 07:13:11.098 * DB saved on disk
+8160:C 13 Jun 2022 07:13:11.099 * RDB: 0 MB of memory used by copy-on-write
+1377:M 13 Jun 2022 07:13:11.194 * Background saving terminated with success
+1378:C 13 Jun 2022 07:15:52.981 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1378:C 13 Jun 2022 07:15:52.981 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1378, just started
+1378:C 13 Jun 2022 07:15:52.981 # Configuration loaded
+1378:M 13 Jun 2022 07:15:52.981 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1378
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1378:M 13 Jun 2022 07:15:52.983 # Server initialized
+1378:M 13 Jun 2022 07:15:52.983 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1378:M 13 Jun 2022 07:15:52.983 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1378:M 13 Jun 2022 07:15:52.986 * DB loaded from disk: 0.000 seconds
+1378:M 13 Jun 2022 07:15:52.986 * Ready to accept connections
+1378:M 13 Jun 2022 07:20:53.082 * 10 changes in 300 seconds. Saving...
+1378:M 13 Jun 2022 07:20:53.083 * Background saving started by pid 2014
+2014:C 13 Jun 2022 07:20:53.087 * DB saved on disk
+2014:C 13 Jun 2022 07:20:53.088 * RDB: 0 MB of memory used by copy-on-write
+1378:M 13 Jun 2022 07:20:53.183 * Background saving terminated with success
+1378:M 13 Jun 2022 07:26:01.421 * 10 changes in 300 seconds. Saving...
+1378:M 13 Jun 2022 07:26:01.421 * Background saving started by pid 2292
+2292:C 13 Jun 2022 07:26:01.426 * DB saved on disk
+2292:C 13 Jun 2022 07:26:01.426 * RDB: 0 MB of memory used by copy-on-write
+1378:M 13 Jun 2022 07:26:01.522 * Background saving terminated with success
+1378:M 13 Jun 2022 07:31:02.025 * 10 changes in 300 seconds. Saving...
+1378:M 13 Jun 2022 07:31:02.025 * Background saving started by pid 2617
+2617:C 13 Jun 2022 07:31:02.029 * DB saved on disk
+2617:C 13 Jun 2022 07:31:02.029 * RDB: 0 MB of memory used by copy-on-write
+1378:M 13 Jun 2022 07:31:02.125 * Background saving terminated with success
+1378:M 13 Jun 2022 08:41:17.323 * 1 changes in 900 seconds. Saving...
+1378:M 13 Jun 2022 08:41:17.323 * Background saving started by pid 2860
+2860:C 13 Jun 2022 08:41:17.328 * DB saved on disk
+2860:C 13 Jun 2022 08:41:17.329 * RDB: 0 MB of memory used by copy-on-write
+1378:M 13 Jun 2022 08:41:17.424 * Background saving terminated with success
+1378:M 13 Jun 2022 08:51:43.096 * 10 changes in 300 seconds. Saving...
+1378:M 13 Jun 2022 08:51:43.096 * Background saving started by pid 3168
+3168:C 13 Jun 2022 08:51:43.100 * DB saved on disk
+3168:C 13 Jun 2022 08:51:43.100 * RDB: 0 MB of memory used by copy-on-write
+1378:M 13 Jun 2022 08:51:43.197 * Background saving terminated with success
+1378:C 13 Jun 2022 08:52:21.247 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1378:C 13 Jun 2022 08:52:21.247 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1378, just started
+1378:C 13 Jun 2022 08:52:21.247 # Configuration loaded
+1378:M 13 Jun 2022 08:52:21.248 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1378
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1378:M 13 Jun 2022 08:52:21.249 # Server initialized
+1378:M 13 Jun 2022 08:52:21.249 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1378:M 13 Jun 2022 08:52:21.249 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1378:M 13 Jun 2022 08:52:21.249 * DB loaded from disk: 0.000 seconds
+1378:M 13 Jun 2022 08:52:21.249 * Ready to accept connections
+1378:M 14 Jun 2022 01:42:41.877 * 1 changes in 900 seconds. Saving...
+1378:M 14 Jun 2022 01:42:41.925 * Background saving started by pid 1946
+1946:C 14 Jun 2022 01:42:41.930 * DB saved on disk
+1946:C 14 Jun 2022 01:42:41.931 * RDB: 0 MB of memory used by copy-on-write
+1378:M 14 Jun 2022 01:42:42.026 * Background saving terminated with success
+1378:C 14 Jun 2022 01:50:21.707 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1378:C 14 Jun 2022 01:50:21.707 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1378, just started
+1378:C 14 Jun 2022 01:50:21.707 # Configuration loaded
+1378:M 14 Jun 2022 01:50:21.707 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1378
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1378:M 14 Jun 2022 01:50:21.710 # Server initialized
+1378:M 14 Jun 2022 01:50:21.710 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1378:M 14 Jun 2022 01:50:21.710 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1378:M 14 Jun 2022 01:50:21.710 * DB loaded from disk: 0.000 seconds
+1378:M 14 Jun 2022 01:50:21.710 * Ready to accept connections
+1378:M 14 Jun 2022 02:13:39.222 * 1 changes in 900 seconds. Saving...
+1378:M 14 Jun 2022 02:13:39.223 * Background saving started by pid 2888
+2888:C 14 Jun 2022 02:13:39.229 * DB saved on disk
+2888:C 14 Jun 2022 02:13:39.230 * RDB: 0 MB of memory used by copy-on-write
+1378:M 14 Jun 2022 02:13:39.324 * Background saving terminated with success
+1378:C 14 Jun 2022 02:17:35.376 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1378:C 14 Jun 2022 02:17:35.376 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1378, just started
+1378:C 14 Jun 2022 02:17:35.376 # Configuration loaded
+1378:M 14 Jun 2022 02:17:35.378 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1378
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1378:M 14 Jun 2022 02:17:35.380 # Server initialized
+1378:M 14 Jun 2022 02:17:35.380 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1378:M 14 Jun 2022 02:17:35.380 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1378:M 14 Jun 2022 02:17:35.380 * Ready to accept connections
+1378:M 14 Jun 2022 02:24:53.579 * 10 changes in 300 seconds. Saving...
+1378:M 14 Jun 2022 02:24:53.581 * Background saving started by pid 2071
+2071:C 14 Jun 2022 02:24:53.588 * DB saved on disk
+2071:C 14 Jun 2022 02:24:53.589 * RDB: 0 MB of memory used by copy-on-write
+1378:M 14 Jun 2022 02:24:53.681 * Background saving terminated with success
+1378:M 14 Jun 2022 02:29:54.016 * 10 changes in 300 seconds. Saving...
+1378:M 14 Jun 2022 02:29:54.017 * Background saving started by pid 2388
+2388:C 14 Jun 2022 02:29:54.028 * DB saved on disk
+2388:C 14 Jun 2022 02:29:54.029 * RDB: 0 MB of memory used by copy-on-write
+1378:M 14 Jun 2022 02:29:54.117 * Background saving terminated with success
+1378:M 14 Jun 2022 02:34:59.962 * 10 changes in 300 seconds. Saving...
+1378:M 14 Jun 2022 02:34:59.962 * Background saving started by pid 2677
+2677:C 14 Jun 2022 02:34:59.967 * DB saved on disk
+2677:C 14 Jun 2022 02:34:59.968 * RDB: 0 MB of memory used by copy-on-write
+1378:M 14 Jun 2022 02:35:00.063 * Background saving terminated with success
+1378:M 14 Jun 2022 02:40:01.000 * 10 changes in 300 seconds. Saving...
+1378:M 14 Jun 2022 02:40:01.001 * Background saving started by pid 2953
+2953:C 14 Jun 2022 02:40:01.006 * DB saved on disk
+2953:C 14 Jun 2022 02:40:01.006 * RDB: 0 MB of memory used by copy-on-write
+1378:M 14 Jun 2022 02:40:01.101 * Background saving terminated with success
+1378:M 14 Jun 2022 03:02:27.059 * 1 changes in 900 seconds. Saving...
+1378:M 14 Jun 2022 03:02:27.059 * Background saving started by pid 4135
+4135:C 14 Jun 2022 03:02:27.063 * DB saved on disk
+4135:C 14 Jun 2022 03:02:27.063 * RDB: 0 MB of memory used by copy-on-write
+1378:M 14 Jun 2022 03:02:27.159 * Background saving terminated with success
+1378:M 14 Jun 2022 03:07:28.092 * 10 changes in 300 seconds. Saving...
+1378:M 14 Jun 2022 03:07:28.093 * Background saving started by pid 4409
+4409:C 14 Jun 2022 03:07:28.097 * DB saved on disk
+4409:C 14 Jun 2022 03:07:28.098 * RDB: 0 MB of memory used by copy-on-write
+1378:M 14 Jun 2022 03:07:28.193 * Background saving terminated with success
+1378:M 14 Jun 2022 03:12:29.017 * 10 changes in 300 seconds. Saving...
+1378:M 14 Jun 2022 03:12:29.017 * Background saving started by pid 4707
+4707:C 14 Jun 2022 03:12:29.021 * DB saved on disk
+4707:C 14 Jun 2022 03:12:29.021 * RDB: 0 MB of memory used by copy-on-write
+1378:M 14 Jun 2022 03:12:29.118 * Background saving terminated with success
+1378:signal-handler (1655176726) Received SIGTERM scheduling shutdown...
+1378:M 14 Jun 2022 03:18:46.352 # User requested shutdown...
+1378:M 14 Jun 2022 03:18:46.352 * Saving the final RDB snapshot before exiting.
+1378:M 14 Jun 2022 03:18:46.356 * DB saved on disk
+1378:M 14 Jun 2022 03:18:46.356 * Removing the pid file.
+1378:M 14 Jun 2022 03:18:46.356 # Redis is now ready to exit, bye bye...
+1379:C 14 Jun 2022 03:21:38.471 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1379:C 14 Jun 2022 03:21:38.471 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1379, just started
+1379:C 14 Jun 2022 03:21:38.471 # Configuration loaded
+1379:M 14 Jun 2022 03:21:38.473 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1379
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1379:M 14 Jun 2022 03:21:38.477 # Server initialized
+1379:M 14 Jun 2022 03:21:38.477 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1379:M 14 Jun 2022 03:21:38.477 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1379:M 14 Jun 2022 03:21:38.477 * Ready to accept connections
+1379:M 14 Jun 2022 04:23:20.488 * 1 changes in 900 seconds. Saving...
+1379:M 14 Jun 2022 04:23:20.489 * Background saving started by pid 4912
+4912:C 14 Jun 2022 04:23:20.494 * DB saved on disk
+4912:C 14 Jun 2022 04:23:20.494 * RDB: 0 MB of memory used by copy-on-write
+1379:M 14 Jun 2022 04:23:20.590 * Background saving terminated with success
+1379:M 14 Jun 2022 04:28:21.015 * 10 changes in 300 seconds. Saving...
+1379:M 14 Jun 2022 04:28:21.015 * Background saving started by pid 5247
+5247:C 14 Jun 2022 04:28:21.020 * DB saved on disk
+5247:C 14 Jun 2022 04:28:21.020 * RDB: 0 MB of memory used by copy-on-write
+1379:M 14 Jun 2022 04:28:21.116 * Background saving terminated with success
+1377:C 15 Jun 2022 10:33:35.216 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1377:C 15 Jun 2022 10:33:35.216 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1377, just started
+1377:C 15 Jun 2022 10:33:35.216 # Configuration loaded
+1377:M 15 Jun 2022 10:33:35.217 # Could not create server TCP listening socket ::1:6379: bind: Cannot assign requested address
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1377
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1377:M 15 Jun 2022 10:33:35.220 # Server initialized
+1377:M 15 Jun 2022 10:33:35.220 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1377:M 15 Jun 2022 10:33:35.220 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1377:M 15 Jun 2022 10:33:35.221 * DB loaded from disk: 0.000 seconds
+1377:M 15 Jun 2022 10:33:35.221 * Ready to accept connections
+1377:signal-handler (1655379594) Received SIGTERM scheduling shutdown...
+1377:M 16 Jun 2022 11:39:54.094 # User requested shutdown...
+1377:M 16 Jun 2022 11:39:54.094 * Saving the final RDB snapshot before exiting.
+1377:M 16 Jun 2022 11:39:54.105 * DB saved on disk
+1377:M 16 Jun 2022 11:39:54.105 * Removing the pid file.
+1377:M 16 Jun 2022 11:39:54.105 # Redis is now ready to exit, bye bye...

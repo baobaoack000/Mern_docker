@@ -1,0 +1,47 @@
+show dbs
+show collections
+show collection
+use user
+show dbs
+show sbs
+show user
+show collections
+show collection
+show db
+use user
+show collections
+use user
+show dbs
+db.storage.find()
+db.storage.findAll()
+show collections
+show dbs
+use db
+show dbs
+show collections
+use user
+show collections
+use admin
+show dbs
+show collections
+show collection
+show collections
+use user
+show dbs
+db.user.find()
+show collections
+show collection
+show dbs
+db.user.insertOne({name: "Max"})
+show dbs
+use Users
+show dbs
+db.coll.find()
+show collections
+db.coll.insertOne({name: "Max"})
+show collections
+use local
+show dbs
+show collections
+use admin
+show dbs
