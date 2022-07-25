@@ -1,5 +1,5 @@
 # default ver 17
-FROM node:lts-buster-slim 
+FROM node:16.15.0-slim 
 
 #install dependencies
 RUN npm install -g nodemon
