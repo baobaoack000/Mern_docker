@@ -1,16 +1,26 @@
-# default ver 17
-FROM node:lts-buster-slim 
+# Use latest node version 8.x
+FROM node:8.10.0
 
-#install dependencies
-RUN npm install -g nodemon
-#APP location
-WORKDIR /usr/src/app
-COPY package.json /usr/src/app/package.json
-COPY package-lock.json /usr/src/app/package-lock.json 
-RUN npm ci
+MAINTAINER Kunal Kapadia <kunalkapadia12@gmail.com>
 
-COPY . /usr/src/app
+# create app directory in container
+RUN mkdir -p /app
 
-EXPOSE 3000
+# set /app directory as default working directory
+WORKDIR /app
 
-CMD [ "npm","run","start" ]
+# only copy package.json initially so that `RUN yarn` layer is recreated only
+# if there are changes in package.json
+ADD package.json yarn.lock /app/
+
+# --pure-lockfile: Don’t generate a yarn.lock lockfile
+RUN yarn --pure-lockfile
+
+# copy all file from current dir to /app in container
+COPY . /app/
+
+# expose port 4040
+EXPOSE 4040
+
+# cmd to start service
+CMD [ "yarn", "start" ]
