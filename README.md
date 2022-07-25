@@ -14,3 +14,7 @@
 - ` docker-compose top  `                            # Display the running processes
 - ` docker-compose run -rm -p 2022:22 web bash `     # Start web service and runs bash as its command, remove old container.
 
+2. **Branch**
+- main : temporary unavalible
+- dev : under development 
+- beta-dev: testing new changed and will be merge in dev.
