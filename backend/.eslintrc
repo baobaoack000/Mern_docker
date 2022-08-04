@@ -30,7 +30,8 @@
     ],
     "no-underscore-dangle": [
       0
-    ]
+    ],
+    "quotes": ["off"]
   },
   "env": {
     "node": true,
